@@ -1,6 +1,10 @@
 var camps = [
   {name: 'Slough Creek Campground', image: 'https://www.fodors.com/wp-content/uploads/2019/02/fruita--975x650.jpg'},
+  Yellowstone National Park, Wyoming
+
   {name: 'Fruita Campground', image: 'https://www.fodors.com/wp-content/uploads/2019/02/wonder-lake--975x650.jpg'},
+  Capitol Reef National Park, Utah
+  
   {name: 'Wonder Lake Campground', image: 'https://www.fodors.com/wp-content/uploads/2019/02/pinon-flats--975x650.jpg'},
   {name: 'Slough Creek Campground', image: 'https://www.fodors.com/wp-content/uploads/2019/02/fruita--975x650.jpg'},
   {name: 'Fruita Campground', image: 'https://www.fodors.com/wp-content/uploads/2019/02/wonder-lake--975x650.jpg'},

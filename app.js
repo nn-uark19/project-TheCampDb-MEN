@@ -70,7 +70,7 @@ app.get('/campgrounds/new', function(req, res){
 // CREATE route (/campgrounds POST): to insert data, redirect to get /campgrounds GET
 app.post('/campgrounds', function(req, res){
   console.log('Route app.post(/campgrounds)');
-  const newCamp = {name: req.body.name, image: req.body.image};
+  const newCamp = {name: req.body.name, image: req.body.image, description: req.body.description};
   Campground.create(newCamp, function(err, campAdd){
     if (err) {
       console.log(err);
@@ -79,7 +79,6 @@ app.post('/campgrounds', function(req, res){
       console.log(campAdd);
     }
   });
-  camps.push(newCamp);
   res.redirect('/campgrounds');
 })
 
@@ -97,9 +96,3 @@ app.get('/campgrounds/:id',function(req, res){
     }
   })
 });
-
-// app.get('/cats/:id', function(req, res) {
-// 	Cat.findById(req.params.id, function (err, foundCat) {
-// 		if (err) {…} else {…}
-// 	});
-// });
