@@ -4,6 +4,7 @@ version 2
 branch: mav2mongoosester
 new technology: mongoose, RESTful 
 technology: mongoose, RESTful, bootstrap, nodejs, expressjs
+4 terminals: mongod, nodemon, mongo for debug database, 1 free terminal
 
 ===================================================
 YelpCamp: Adding Mongoose	
