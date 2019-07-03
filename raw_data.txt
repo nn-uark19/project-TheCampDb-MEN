@@ -1,0 +1,13 @@
+/*
+Campground.create({
+  name:'Slough Creek Campground',
+  image: 'https://www.fodors.com/wp-content/uploads/2019/02/fruita--975x650.jpg',
+  description: 'Located at Yellowstone National Park, Wyoming'
+}, function(err, campAdd){
+  if (err){
+    console.log(err);
+  } else {
+    console.log(campAdd);
+  }
+});
+*/

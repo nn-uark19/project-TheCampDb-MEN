@@ -11,25 +11,7 @@ app.set('view engine', 'ejs');
 
 //==============================================
 // setup database
-const campgroundSchema = new mongoose.Schema({
-  name: String,
-  image: String,
-  description: String
-});
-const Campground = mongoose.model('Campgrounds', campgroundSchema); 
-/*
-Campground.create({
-  name:'Slough Creek Campground',
-  image: 'https://www.fodors.com/wp-content/uploads/2019/02/fruita--975x650.jpg',
-  description: 'Located at Yellowstone National Park, Wyoming'
-}, function(err, campAdd){
-  if (err){
-    console.log(err);
-  } else {
-    console.log(campAdd);
-  }
-});
-*/
+const Campground = require('./models/campgrounds');
 
 //==============================================
 // global variable
