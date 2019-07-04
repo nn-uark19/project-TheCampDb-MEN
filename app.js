@@ -4,32 +4,16 @@ console.log('Begin app.js');
 const express   =   require('express'),
       app       =   express(),
       mongoose  =   require('mongoose'),      
-      bodyParser =  require('body-parser');
+      bodyParser =  require('body-parser'),
+      seedDb    =   require('./seeds');
 mongoose.connect('mongodb://localhost:27017/yelp_camp', { useNewUrlParser: true });
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 
 //==============================================
-// setup database
-const campgroundSchema = new mongoose.Schema({
-  name: String,
-  image: String,
-  description: String
-});
-const Campground = mongoose.model('Campgrounds', campgroundSchema); 
-/*
-Campground.create({
-  name:'Slough Creek Campground',
-  image: 'https://www.fodors.com/wp-content/uploads/2019/02/fruita--975x650.jpg',
-  description: 'Located at Yellowstone National Park, Wyoming'
-}, function(err, campAdd){
-  if (err){
-    console.log(err);
-  } else {
-    console.log(campAdd);
-  }
-});
-*/
+// setup database. db was already declared in seeds.js
+// const Campground = require('./models/campground');
+// seedDb();
 
 //==============================================
 // global variable
@@ -85,7 +69,8 @@ app.post('/campgrounds', function(req, res){
 app.get('/campgrounds/:id',function(req, res){
   console.log('Route_show app.get(/campgrounds/:id)');
   var idToBeFound = req.params.id;
-  Campground.find({'_id':idToBeFound}, function(err, foundCamp){
+  Campground.findById({'_id':idToBeFound}).populate('comments')
+  .exec(function(err, foundCamp){
     if (err) {
       console.log(err);
     } else {
@@ -93,5 +78,6 @@ app.get('/campgrounds/:id',function(req, res){
       console.log(foundCamp);
       res.render("route_show", {camp: foundCamp});
     }
-  })
+  });
+ 
 });
