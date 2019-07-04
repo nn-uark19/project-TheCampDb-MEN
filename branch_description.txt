@@ -15,3 +15,10 @@ YelpCamp: Refactoring App.js
 - use module.exports
 - require everything correctly!
 
+YelpCamp: Seeding the Database. Add Seeds File
+- add a seeds.js files {seeds.js}
+- run the seeds file every time the server starts {remove all camps- remove all comments- hardcode add camps- add comments, Referencing data }
+
+YelpCamp: Comment Model.	Add the Comment model
+- make our errors go away! {make Comment model comment.js with text-author, add comment property to campground db, Referencing data }
+- display comments on campground show page {update app.get(/campgrounds/:id) to populate the comments, Referencing data }
