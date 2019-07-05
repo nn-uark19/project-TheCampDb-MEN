@@ -1,12 +1,13 @@
-<% include partials/header%>
+<% include ../partials/header%>
 
 <h1> <%= camp.name %> </h1>
 
 <img class="thumbnail" src='<%= camp.image%>'>
 <p><%= camp.description %></p>
+<p><a href="/campgrounds/<%=camp._id%>/comments/new" >Add new Comment</a></p>
 <% camp.comments.forEach(function(comment){ %>
   <p><strong><%= comment.author%></strong> - <%= comment.text%></p>
 <% })%>
 <a href='/campgrounds'>Go Back</a>
 
-<% include partials/footer%>
+<% include ../partials/footer%>

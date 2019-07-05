@@ -1,0 +1,18 @@
+<%include ../partials/header.ejs%>
+
+<%# content %>
+<h1 class="text-center">Add a Comment for <%=camp.name%></h1>
+<div id="form" style="width:30%; margin: 25px auto">
+  <form action='/campgrounds/<%=camp._id%>/comments' method='POST'>
+    <div class="form-group">
+      <input name='newComment[author]' class="form-control" placeholder='author'>
+    </div>
+    <div class="form-group">
+      <input name='newComment[text]' class="form-control" placeholder='comment about campround'>
+    </div>
+    <button class="btn btn-primary btn-block btn-lg">Submit</button>
+  </form>
+</div>
+<p class="text-center"><a href="/campgrounds/<%=camp._id%>">Go Back</a></p>
+
+<%include ../partials/footer.ejs%>
