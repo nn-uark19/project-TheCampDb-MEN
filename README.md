@@ -2,7 +2,7 @@
 
 version 4
 branch: v4comments (branch from master)
-new technology: mongoose 
+new technology: nested routes
 technology: mongoose (mongodb, module.exports,  seeds), RESTful, bootstrap, nodejs, expressjs
 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
