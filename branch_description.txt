@@ -1,4 +1,5 @@
 version 4
+this prevent from master to fast forward
 branch: master (merge from v4comments)
 new technology: nested routes
 technology: mongoose (mongodb, module.exports,  seeds), RESTful, bootstrap, nodejs, expressjs
