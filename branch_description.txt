@@ -1,8 +1,7 @@
-version 4
-this prevent from master to fast forward
-branch: master (merge from v4comments)
-new technology: nested routes
-technology: mongoose (mongodb, module.exports,  seeds), RESTful, bootstrap, nodejs, expressjs
+version 5
+branch: master (merge from v5styleShowPage)
+new technology: custom css file
+technology: public/stylesheets/main.css, mongoose (mongodb, module.exports,  seeds), RESTful, bootstrap, nodejs, expressjs
 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 Note: 
@@ -10,10 +9,29 @@ Note:
 - (mongoose) Cat.find returns array, whereas Cat.findById return 1 object
 - (git) fastforward. seems like the master branch got fast forward due to no changes between merges. happens during v4. commit c2212c1..8baf3ef (8baf3efc44d94f08bfde541c0b794d5a7941558e)
 ---------------
+YelpCamp: Styling Comments Pt1.	Style Show Page
+- add sidebar to show page {bootstrap grid 3-9, comment well}
+- display comments nicely
+- customize photo
+
+YelpCamp: Styling Comments Pt2
+- include stylesheet css file {:mainProject/public/stylesheets/main.css…app.js…header.js}
+- in show page, image padding and width
+
+
+---------------------------------------------
+version 4
+this prevent from master to fast forward
+branch: master (merge from v4comments)
+new technology: nested routes
+technology: mongoose (mongodb, module.exports,  seeds), RESTful, bootstrap, nodejs, expressjs
+4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
+---------------
 YelpCamp: Creating Comments Pt1	Comment New/Create. Start of v4
 - discuss nested routes
 	NEW	/campgrounds/:id/comments/new	GET
 	CREATE	/campgrounds/:id/comments		 POST
+
 - add the comment new routes {
 	* Have 2 folders now views/campgrounds and comments. Change files location
 	* Update app.js render, header/footer for route files 
@@ -30,10 +48,6 @@ branch: master (merge from v3seeds)
 new technology: mongoose exports,  mongoose seeds
 technology: mongoose (connect mongodb), RESTful, bootstrap, nodejs, expressjs
 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
----------------
-Note: 
-- (git) if we make a change in branch2, but not stage/commit, you will lose all the changes if you switch to other branches
-- (mongoose) Cat.find returns array, whereas Cat.findById return 1 object
 ---------------
 YelpCamp: Refactoring App.js	
 - create a models directory {:mainProject/models/campgrounds.js}
