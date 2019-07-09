@@ -5,9 +5,6 @@
 <div id="form" style="width:30%; margin: 25px auto">
   <form action='/campgrounds/<%=camp._id%>/comments' method='POST'>
     <div class="form-group">
-      <input name='newComment[author]' class="form-control" placeholder='author'>
-    </div>
-    <div class="form-group">
       <input name='newComment[text]' class="form-control" placeholder='comment about campround'>
     </div>
     <button class="btn btn-primary btn-block btn-lg">Submit</button>

@@ -27,7 +27,7 @@
         <div id="comment-section">
           <% camp.comments.forEach(function(comment){ %>
             <span class="pull-right">10 days ago</span>
-            <strong><%= comment.author%></strong>           
+            <strong><%= comment.author.username%></strong>           
             <p><%= comment.text%></p>
           <% })%>
         </div>

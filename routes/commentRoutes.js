@@ -27,6 +27,10 @@ router.post('/', isLoggedIn, function (req, res) {
     if (err) {
       console.log('Cannot create comment from form');
     } else {
+      // associate comment with user
+      newComment.author.id = req.user._id;
+      newComment.author.username = req.user.username;
+      newComment.save();
       // find the campground
       Campground.findById(req.params.id, function (err, foundCamp) {
         if (err) {

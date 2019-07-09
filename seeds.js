@@ -51,25 +51,25 @@ function seedDb() {
               } else {
                 console.log(`Added ${createdCamp.name} to campgrounds collection`);
                 // add comment to campground
-                Comment.create({
-                  author: 'Nghia Nguyen',
-                  text: 'This place is great but I wish it had Wifi here'
-                },function(err, createdComment){
-                  if (err) {
-                    console.log('Cannot add to comment collection');
-                  } else {
-                    console.log('Added to comment collection');
-                    // save the new comment to camp using reference
-                    createdCamp.comments.push(createdComment);
-                    createdCamp.save(function(err, updatedCamp){
-                      if (err) {
-                        console.log('Cannot refer comment to campground');
-                      } else {
-                        console.log('Success refer comment to campground');
-                      }
-                    })
-                  }
-                });
+                // Comment.create({
+                //   author: 'Nghia Nguyen',
+                //   text: 'This place is great but I wish it had Wifi here'
+                // },function(err, createdComment){
+                //   if (err) {
+                //     console.log('Cannot add to comment collection');
+                //   } else {
+                //     console.log('Added to comment collection');
+                //     // save the new comment to camp using reference
+                //     createdCamp.comments.push(createdComment);
+                //     createdCamp.save(function(err, updatedCamp){
+                //       if (err) {
+                //         console.log('Cannot refer comment to campground');
+                //       } else {
+                //         console.log('Success refer comment to campground');
+                //       }
+                //     })
+                //   }
+                // });
               }
             });
           });
