@@ -22,15 +22,20 @@ router.get('/new', isLoggedIn, function (req, res) {
 // CREATE route
 router.post('/', isLoggedIn, function (req, res) {
   console.log('Route app.post(/campgrouds/:id/comments/)');
-  // get comment
-  Comment.create(req.body.newComment, function (err, newComment) {
+  // get comment and associate comment with user
+  const author = {
+    id: req.user._id,
+    username: req.user.username
+  }
+  const newComment = {
+    text: req.body.newComment,
+    author: author
+  }
+  // create comment
+  Comment.create(newComment, function (err, newComment) {
     if (err) {
       console.log('Cannot create comment from form');
     } else {
-      // associate comment with user
-      newComment.author.id = req.user._id;
-      newComment.author.username = req.user.username;
-      newComment.save();
       // find the campground
       Campground.findById(req.params.id, function (err, foundCamp) {
         if (err) {

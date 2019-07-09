@@ -19,20 +19,24 @@ router.get('/', function (req, res) {
 })
 
 // NEW route (/campgrounds/new GET): to add campground, use post /campgrounds
-router.get('/new', function (req, res) {
+router.get('/new', isLoggedIn, function (req, res) {
   console.log('Route_new app.get(/campgrounds/new)');
   res.render('./campgrounds/route_new');
 })
 
 // CREATE route (/campgrounds POST): to insert data, redirect to get /campgrounds GET
-router.post('/', function (req, res) {
+router.post('/', isLoggedIn, function (req, res) {
   console.log('Route_create app.post(/campgrounds)');
   const newCamp = req.body.newCamp;
-  Campground.create(newCamp, function (err, campAdd) {
+  newCamp.author = {
+    id: req.user._id,
+    username: req.user.username
+  };
+  Campground.create(newCamp, function (err, newCamp) {
     if (err) {
       console.log(err);
     } else {
-      console.log(' mongoose.create successfully, redirect to /campgrounds');
+      console.log(' mongoose.create successfully, redirect to app.get(/campgrounds)');
       res.redirect('/campgrounds');
     }
   });
@@ -56,5 +60,14 @@ router.get('/:id', function (req, res) {
       }
     });
 });
+
+// middleware function, check if login
+function isLoggedIn(req, res, next){
+  // console.log(req.isAuthenticated());
+  if (req.isAuthenticated()){
+    return next();
+  }
+  res.redirect('/login');
+};
 
 module.exports = router;
