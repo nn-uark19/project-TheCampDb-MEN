@@ -1,3 +1,25 @@
+version 9
+- branch: v9campgroundUser
+- branch: master (merge from v9campgroundUser)
+- new technology: data associations (save author’s name to campgrounds automactically)
+- technology: 
+  * data associations (save author’s name to a comment automactically)
+	* refactor routes (comments, camgrounds, user)
+	* authentication (express-session, passportjs, passport-local, passport-local-mongoose), 
+	* mongoose (mongodb, module.exports,  seeds), 
+	* RESTful routes, bootstrap, nodejs, expressjs
+- 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
+---------------
+YelpCamp: User Associations: Campground. User + Campgrounds
+- prevent an unauthenticated user from creating a campground {add middleware to routes/campgroundsRoutes.js}
+- save username & id to newly created campground {
+ + comment out campground section in seeds.js
+ + modify campgroundSchema- add author with id-referring data and username
+ + modify routes/campgroundRoutes.js to add author
+ + modify views/campgrounds/route_show.ejs to show author name }
+
+
+---------------------------------------------
 version 8
 - branch: master (merge from v8commentUser)
 - new technology: data associations (save author’s name to a comment automactically)
@@ -8,15 +30,19 @@ version 8
 	* RESTful routes, bootstrap, nodejs, expressjs
 - 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
-Note: 
-- (git) if we make a change in branch2, but not stage/commit, you will lose all the changes if you switch to other branches
-- (mongoose) Cat.find returns array, whereas Cat.findById return 1 object
-- (git) fastforward. seems like the master branch got fast forward due to no changes between merges. happens during v4. commit c2212c1..8baf3ef (8baf3efc44d94f08bfde541c0b794d5a7941558e)
----------------
 YelpCamp: User Associations: Comment. Users + Comments
 - associate users and comments {
  + change commentSchema…author has id- Referencing data and username
  + change comment route router.post(/)
+ + remove author field from the form /views/comments/new.ejs}
+- save author’s name to a comment automactically
+
+YelpCamp: User Associations: Comment	Users + Comments
+- associate users and comments {
+ + comment out comment section in seeds.js
+ + modify commentSchema…author has id- Referencing data and username
+ + modify routes/commentRoutes.js router.post(/)
+ + modify comment display in /views/campgrounds/route_show.ejs
  + remove author field from the form /views/comments/new.ejs}
 - save author’s name to a comment automactically
 
