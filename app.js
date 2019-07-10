@@ -109,5 +109,19 @@ app.put('/campgrounds/:id', function(req, res){
 // DESTROY route
 app.delete('/campgrounds/:id', function(req, res){
   console.log('Route app.delete(/campgrounds/:id)');
-  res.send('destroy campground');
+  Campground.findByIdAndRemove(req.params.id, function(err, removedCamp){
+    if (err) {
+      console.log(' cannot find and remove camp');
+    } else {
+      // remove related comments
+      Comment.deleteMany({_id: {$in: removedCamp.comments}}, function(err, removedComment){
+        if (err) {
+          console.log(' cannot deleteMany comments related to campground');
+        } else {
+          // redirect
+          res.redirect('/campgrounds');
+        }
+      });
+    }
+  })
 })

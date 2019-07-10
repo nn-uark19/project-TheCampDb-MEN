@@ -1,3 +1,7 @@
 body {
-  background: red;
+  /* background: radial-gradient(black, transparent); */
+}
+
+#delete-button {
+  display: inline;
 }
