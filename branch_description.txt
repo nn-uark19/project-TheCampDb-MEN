@@ -1,14 +1,17 @@
-version 9
-- branch: v9campgroundUser
-- new technology: data associations (save author’s name to campgrounds automactically)
+version 10
+- branch: v10updateDestroy
+- new technology: 
 - 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
-YelpCamp: User Associations: Comment	Users + Comments
-- associate users and comments {
- + comment out comment section in seeds.js
- + modify commentSchema…author has id- Referencing data and username
- + modify routes/commentRoutes.js router.post(/)
- + modify comment display in /views/campgrounds/route_show.ejs
- + remove author field from the form /views/comments/new.ejs}
-- save author’s name to a comment automactically
+Campground Edit and Update	Editing Campgrounds
+- add method-override {install package}
+- add edit route for campgrounds {app.get(‘/campgrounds/:id/edit’)…/views/campgrounds/route_edit.ejs…build route_edit.ejs }
+- add update route {app.put(‘/campgrounds/:id’) }
+- add link to edit page {/views/campgrounds/route_show.ejs }
+- fix $set problem
+
+Campground Destroy	Deleting Campgrounds
+- add destroy route {app.delete(‘/campgrounds/:id’) }
+- add delete button {/views/campgrounds/route_show.ejs }
+- notice that we need to delete comments associated with the deleted campground link
 
