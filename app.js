@@ -81,47 +81,6 @@ const userRoutes = require('./routes/userRoutes');
 app.use(userRoutes);
 
 // routes in test
-// EDIT route
-app.get('/campgrounds/:id/edit', function(req, res){
-  console.log('Route app.get(/campgrounds/:id/edit)');
-  Campground.findById(req.params.id, function(err, foundCampground){
-    if (err) {
-      console.log(' cannot find campgrounds');
-    } else {
-      res.render('./campgrounds/route_edit', {camp: foundCampground});
-    }
-  });
-})
-// UPDATE route
-app.put('/campgrounds/:id', function(req, res){
-  console.log('Route app.put(/campgrounds/:id)');
-  // find and update 
-  Campground.findByIdAndUpdate(req.params.id, req.body.newCamp, function(err, updateCamp){
-    if (err) {
-      console.log('cannot find and update campground');
-    } else {
-      // redirect
-      res.redirect('/campgrounds/' + req.params.id);
-    }
-  })
-})
 
-// DESTROY route
-app.delete('/campgrounds/:id', function(req, res){
-  console.log('Route app.delete(/campgrounds/:id)');
-  Campground.findByIdAndRemove(req.params.id, function(err, removedCamp){
-    if (err) {
-      console.log(' cannot find and remove camp');
-    } else {
-      // remove related comments
-      Comment.deleteMany({_id: {$in: removedCamp.comments}}, function(err, removedComment){
-        if (err) {
-          console.log(' cannot deleteMany comments related to campground');
-        } else {
-          // redirect
-          res.redirect('/campgrounds');
-        }
-      });
-    }
-  })
-})
+
+
