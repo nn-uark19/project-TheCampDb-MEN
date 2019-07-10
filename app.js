@@ -81,6 +81,3 @@ const userRoutes = require('./routes/userRoutes');
 app.use(userRoutes);
 
 // routes in test
-
-
-

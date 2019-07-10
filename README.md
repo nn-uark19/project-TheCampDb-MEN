@@ -22,4 +22,11 @@ Campground Destroy	Deleting Campgrounds
 - add delete button {/views/campgrounds/route_show.ejs }
 - notice that we need to delete comments associated with the deleted campground link
 
+Campground Authorization Part 1	Authorization Pt 1
+- user can only edit his/her campgrounds {
+ + idea is to use both grounds 1.middleware for the route 2.hide buttons
+ + modify /routes/campgroundRoutes.js routes app.get(/edit) first}
+- user can only delete his/her campgrounds {build middleware function for both edit and delete}
 
+Campground Authorization Part 2	Authorization Pt 2
+- hide/show edit and delete buttons {modify show views/campgrounds/route_show.ejs }
