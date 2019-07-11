@@ -1,0 +1,15 @@
+<%include ../partials/header.ejs%>
+
+<%# content %>
+<h1 class="text-center">Edit Comment</h1>
+<div id="form" style="width:30%; margin: 25px auto">
+  <form action='/campgrounds/<%=campId%>/comments/<%=comment._id%>?_method=PUT' method='POST'>
+    <div class="form-group">
+      <input name='newComment[text]' class="form-control" value="<%=comment.text%>">
+    </div>
+    <button class="btn btn-primary btn-block btn-lg">Submit</button>
+  </form>
+</div>
+<p class="text-center"><a href="/campgrounds/<%=campId%>">Go Back</a></p>
+
+<%include ../partials/footer.ejs%>

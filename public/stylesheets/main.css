@@ -1,3 +1,15 @@
 body {
-  background: red;
+  /* background: radial-gradient(black, transparent); */
+}
+
+.delete-button {
+  display: inline;
+}
+
+#comment {
+  margin: 0px;
+}
+
+.btn-comment {
+  margin: 0 0 15px 0;
 }

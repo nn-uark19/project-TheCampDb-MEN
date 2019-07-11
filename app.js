@@ -8,7 +8,7 @@ const express = require('express'),
   expressSession = require('express-session'),
   passport = require('passport'),
   LocalStrategy = require('passport-local'),
-  // passportLocalMongoose = require('passport-local-mongoose'),
+  methodOverride = require('method-override'),
   app = express();
 // body-parser
 app.use(bodyParser.urlencoded({ 
@@ -18,6 +18,8 @@ app.use(bodyParser.urlencoded({
 app.set('view engine', 'ejs'); 
 // custom css file
 app.use(express.static(__dirname + '/public'));
+// method-override
+app.use(methodOverride('_method'));
 
 //==============================================
 // setup database. db model Campground, Comment was already declared in seeds.js
@@ -63,17 +65,51 @@ app.listen(3000, function () {
 console.log('End app.js');
 
 //==============================================
-// routes
+// landing route
 app.get('/', function (req, res) {
   console.log('Route app.get(/)');
   res.render('landing');
 })
-
+// camgrounds routes
 const campgroudRoutes = require('./routes/campgroundRoutes');
 app.use('/campgrounds', campgroudRoutes);
-
+// comment routes
 const commentRoutes = require('./routes/commentRoutes');
 app.use('/campgrounds/:id/comments', commentRoutes);
-
+// user routes
 const userRoutes = require('./routes/userRoutes');
 app.use(userRoutes);
+
+// routes in test
+// comments
+// edit - show form
+app.get('/campgrounds/:id/comments/:comment_id/edit', function(req, res){
+  console.log('Route app.get(/campgrounds/:id/comments/:comment_id/edit)');
+  Comment.findById(req.params.comment_id, function(err, foundComment){
+    if (err) {
+      console.log(' cannot find comment');
+      res.redirect('back');
+    } else {
+      res.render('comments/route_edit', {comment: foundComment, campId: req.params.id});
+    }
+  });
+});
+
+// update
+app.put('/campgrounds/:id/comments/:comment_id', function(req, res){
+  console.log('Route app.put(/campgrounds/:id/comments/:comment_id)');
+  Comment.findByIdAndUpdate(req.params.comment_id, req.body.newComment, function(err, updatedComment){
+    if (err) {
+      console.log(' cannot find and update comment');
+      res.redirect('back');
+    } else {
+      res.redirect('/campgrounds/' + req.params.id);
+    }
+  });
+});
+
+// delete
+app.delete('/campgrounds/:id/comments/:comment_id', function(req, res){
+  console.log('Route app.delete(/campgrounds/:id/comments/:comment_id');
+  res.send('comment delete');
+});
