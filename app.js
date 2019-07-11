@@ -26,9 +26,8 @@ app.use(methodOverride('_method'));
 const Campground = require('./models/campground'),
   Comment = require('./models/comment'),
   User = require('./models/user');
-mongoose.connect('mongodb://localhost:27017/yelp_camp', {
-  useNewUrlParser: true
-});
+mongoose.connect('mongodb://localhost:27017/yelp_camp', {useNewUrlParser: true});
+// mongoose.connect('mongodb+srv://neil:nghia123@yelpcampcluster-eook0.mongodb.net/yelp_camp?retryWrites=true&w=majority', {useNewUrlParser: true});
 // const seedDb = require('./seeds');
 // seedDb();
 
