@@ -6,10 +6,10 @@ body {
   display: inline;
 }
 
-#comment {
+#comment-text {
   margin: 0px;
 }
 
-.btn-comment {
+.comment-one {
   margin: 0 0 15px 0;
 }
