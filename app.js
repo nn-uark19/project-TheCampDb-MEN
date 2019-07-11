@@ -20,7 +20,7 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 // method-override
 app.use(methodOverride('_method'));
-
+//asd
 //==============================================
 // setup database. db model Campground, Comment was already declared in seeds.js
 const Campground = require('./models/campground'),
