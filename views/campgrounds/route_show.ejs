@@ -42,6 +42,10 @@
                 <!-- Edit/ Delete button -->
                 <a href="/campgrounds/<%=camp._id%>/comments/<%=comment._id%>/edit" 
                   class="btn btn-success btn-xs">Edit</a>
+                <form action="/campgrounds/<%=camp._id%>/comments/<%=comment._id%>?_method=DELETE" 
+                  method="POST" class="delete-button">
+                  <button class="btn btn-danger btn-xs">Delete</button>
+                </form>
               </div>
             </div>
           <% })%>

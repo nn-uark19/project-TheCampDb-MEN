@@ -111,5 +111,26 @@ app.put('/campgrounds/:id/comments/:comment_id', function(req, res){
 // delete
 app.delete('/campgrounds/:id/comments/:comment_id', function(req, res){
   console.log('Route app.delete(/campgrounds/:id/comments/:comment_id');
-  res.send('comment delete');
+
+  // remove equivalent comment in campground db
+  Campground.findById(req.params.id, function(err, foundCamp){
+    if (err) {
+      console.log(' cannot find campground having the equivalent comment');
+      res.redirect('back');
+    } else {
+      var commentIdex = foundCamp.comments.indexOf(req.params.comment_id);
+      foundCamp.comments.splice(commentIdex, 1);
+      foundCamp.save();
+    }
+  });
+
+    // remove comment
+    Comment.findByIdAndRemove(req.params.comment_id, function(err, removedComment){
+      if (err) {
+        console.log(' cannot find by id and remove comment');
+        res.redirect('back');
+      } else {
+        res.redirect('/campgrounds/' + req.params.id);
+      }
+    });
 });
