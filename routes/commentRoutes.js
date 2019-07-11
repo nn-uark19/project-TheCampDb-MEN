@@ -4,7 +4,6 @@ const Comment = require('../models/comment');
 const Campground = require('../models/campground')
 
 //==============================================
-// for comments
 // NEW route
 router.get('/new', isLoggedIn, function (req, res) {
   console.log('Route app.get(/campgrouds/:id/comments/new)');
@@ -58,6 +57,59 @@ router.post('/', isLoggedIn, function (req, res) {
   })
 });
 
+//==============================================
+// edit - show form
+router.get('/:comment_id/edit', checkCommentOwner, function(req, res){
+  console.log('Route app.get(/campgrounds/:id/comments/:comment_id/edit)');
+    Comment.findById(req.params.comment_id, function(err, foundComment){
+      if (err) {
+        console.log(' cannot find comment');
+        res.redirect('back');
+      } else {        
+        res.render('comments/route_edit', {comment: foundComment, campId: req.params.id});
+      }
+    });
+});
+// update
+router.put('/:comment_id', checkCommentOwner, function(req, res){
+  console.log('Route app.put(/campgrounds/:id/comments/:comment_id)');
+  Comment.findByIdAndUpdate(req.params.comment_id, req.body.newComment, function(err, updatedComment){
+    if (err) {
+      console.log(' cannot find and update comment');
+      res.redirect('back');
+    } else {
+      res.redirect('/campgrounds/' + req.params.id);
+    }
+  });
+});
+
+//==============================================
+// delete
+router.delete('/:comment_id', checkCommentOwner, function(req, res){
+  console.log('Route app.delete(/campgrounds/:id/comments/:comment_id');
+  // remove equivalent comment in campground db
+  Campground.findById(req.params.id, function(err, foundCamp){
+    if (err) {
+      console.log(' cannot find campground having the equivalent comment');
+      res.redirect('back');
+    } else {
+      var commentIdex = foundCamp.comments.indexOf(req.params.comment_id);
+      foundCamp.comments.splice(commentIdex, 1);
+      foundCamp.save();
+    }
+  });
+    // remove comment
+    Comment.findByIdAndRemove(req.params.comment_id, function(err, removedComment){
+      if (err) {
+        console.log(' cannot find by id and remove comment');
+        res.redirect('back');
+      } else {
+        res.redirect('/campgrounds/' + req.params.id);
+      }
+    });
+});
+
+//==============================================
 // middleware function, check if login
 function isLoggedIn(req, res, next){
   // console.log(req.isAuthenticated());
@@ -65,6 +117,28 @@ function isLoggedIn(req, res, next){
     return next();
   }
   res.redirect('/login');
+};
+
+function checkCommentOwner(req, res, next) {
+  // check if login
+  if (!req.isAuthenticated()) {
+    console.log(' plz login');
+    return res.redirect('back');
+  } else {
+    Comment.findById(req.params.comment_id, function(err, foundComment){
+      if (err) {
+        console.log(' cannot find comment');
+        res.redirect('back');
+      } else {
+        // check if own
+        if (!foundComment.author.id.equals(req.user._id)) {
+          console.log(' Comment is not owned by this user');
+        } else {
+          next();
+        }
+      }
+    });
+  }
 };
 
 module.exports = router;
