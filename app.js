@@ -81,3 +81,35 @@ const userRoutes = require('./routes/userRoutes');
 app.use(userRoutes);
 
 // routes in test
+// comments
+// edit - show form
+app.get('/campgrounds/:id/comments/:comment_id/edit', function(req, res){
+  console.log('Route app.get(/campgrounds/:id/comments/:comment_id/edit)');
+  Comment.findById(req.params.comment_id, function(err, foundComment){
+    if (err) {
+      console.log(' cannot find comment');
+      res.redirect('back');
+    } else {
+      res.render('comments/route_edit', {comment: foundComment, campId: req.params.id});
+    }
+  });
+});
+
+// update
+app.put('/campgrounds/:id/comments/:comment_id', function(req, res){
+  console.log('Route app.put(/campgrounds/:id/comments/:comment_id)');
+  Comment.findByIdAndUpdate(req.params.comment_id, req.body.newComment, function(err, updatedComment){
+    if (err) {
+      console.log(' cannot find and update comment');
+      res.redirect('back');
+    } else {
+      res.redirect('/campgrounds/' + req.params.id);
+    }
+  });
+});
+
+// delete
+app.delete('/campgrounds/:id/comments/:comment_id', function(req, res){
+  console.log('Route app.delete(/campgrounds/:id/comments/:comment_id');
+  res.send('comment delete');
+});

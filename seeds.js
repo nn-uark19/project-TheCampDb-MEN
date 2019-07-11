@@ -37,12 +37,12 @@ function seedDb() {
       console.log('Cannot delete records in campgrounds collections');
     } else {
       console.log('Deleted all records of campgrounds collections');
-      // // delete comments
-      // Comment.remove({}, function(err){
-      //   if (err) {
-      //     console.log('Cannot delete records in comments collections');
-      //   } else {
-      //     console.log('Deleted all records in comments collections');
+      // delete comments
+      Comment.remove({}, function(err){
+        if (err) {
+          console.log('Cannot delete records in comments collections');
+        } else {
+          console.log('Deleted all records in comments collections');
       //     // add data to campgrounds
       //     data.forEach(function(seed) {
       //       Campground.create(seed, function(err, createdCamp){
@@ -73,8 +73,8 @@ function seedDb() {
       //         }
       //       });
       //     });
-      //   }
-      // });
+        }
+      });
     }
   });
 }
