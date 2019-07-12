@@ -3,8 +3,6 @@
 <%# main content %>
 <div class="container">
   <div class="jumbotron">
-    <h1><span id="p1Display">0</span></h1>
-    <button id="p1Button">Player One</button>
     <h1>Welcome To YelpCamp!</h1>
     <p>View our hand-picked campgrounds from all over the world</p>
     <p><a class="btn btn-primary btn-lg" href="/campgrounds/new"">Add New Campgrounds</a></p>
@@ -27,17 +25,5 @@
   </div>
 </div>
 
-
-
-<script>
-p1Display = document.querySelector('#p1Display');
-p1Button = document.querySelector('#p1Button');
-p1Score = 0;
-p1Button.addEventListener('click', function () {
-    p1Score++;
-    p1Display.textContent = p1Score;
-});
-
-</script>
 
 <% include ../partials/footer.ejs%>
