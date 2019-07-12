@@ -48,13 +48,4 @@ router.get('/logout', function(req, res){
   res.redirect('/campgrounds');
 });
 
-// middleware function, check if login
-function isLoggedIn(req, res, next){
-  // console.log(req.isAuthenticated());
-  if (req.isAuthenticated()){
-    return next();
-  }
-  res.redirect('/login');
-};
-
 module.exports = router;
