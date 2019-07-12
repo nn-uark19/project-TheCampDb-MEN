@@ -12,7 +12,7 @@ Notice:
 ---------------------------------------------
 version 10b
 - branch: master
-- new technology: (waiting for heroku feature)
+- new technology: (waiting for refactor middleware, flash feature)
 - technology: 
 	* RESTful routes (edit, update, destroy) for nested route comments
   * data associations (save author’s name to a campground, comment automactically)
