@@ -9,6 +9,18 @@ Notice:
 - useful redirect: res.redirect('back');
 - notice the EDIT/UPDATE route (name in form needs to match the schema of the mongoose db that needs to be updated)
 
+---------------------------------------------
+version 10b
+- branch: master
+- new technology: (waiting for heroku feature)
+- technology: 
+	* RESTful routes (edit, update, destroy) for nested route comments
+  * data associations (save author’s name to a campground, comment automactically)
+	* refactor routes (comments, camgrounds, user)
+	* authentication (express-session, passportjs, passport-local, passport-local-mongoose), 
+	* mongoose (mongodb, module.exports,  seeds), 
+	* RESTful routes, bootstrap, nodejs, expressjs
+- 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 
 ---------------------------------------------
 version 10
