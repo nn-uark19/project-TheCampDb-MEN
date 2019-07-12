@@ -49,6 +49,7 @@ router.post('/', middleware.isLoggedIn, function (req, res) {
             } else {
               // redirect
               console.log('Comment added successfully, redirect to /campgrounds/:id');
+              req.flash('success', 'Your Comment Has Been Created!');
               res.redirect('/campgrounds/' + updatedCamp._id);
             }
           });
@@ -79,6 +80,7 @@ router.put('/:comment_id', middleware.checkCommentOwner, function(req, res){
       console.log(' cannot find and update comment');
       res.redirect('back');
     } else {
+      req.flash('success', 'Your Comment Has Been Updated!');
       res.redirect('/campgrounds/' + req.params.id);
     }
   });
@@ -105,6 +107,7 @@ router.delete('/:comment_id', middleware.checkCommentOwner, function(req, res){
         console.log(' cannot find by id and remove comment');
         res.redirect('back');
       } else {
+        req.flash('success', 'Your Comment Has Been Deleted!');
         res.redirect('/campgrounds/' + req.params.id);
       }
     });

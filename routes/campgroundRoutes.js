@@ -39,6 +39,7 @@ router.post('/', middleware.isLoggedIn, function (req, res) {
       console.log(err);
     } else {
       console.log(' mongoose.create successfully, redirect to app.get(/campgrounds)');
+      req.flash('success', 'Your campground has been successfully created!')
       res.redirect('/campgrounds');
     }
   });
@@ -84,6 +85,7 @@ router.put('/:id', middleware.checkCampgroundOwner, function(req, res){
       console.log('cannot find and update campground');
     } else {
       // redirect
+      req.flash('success', 'Your Campground Has Been Updated!');
       res.redirect('/campgrounds/' + req.params.id);
     }
   })
@@ -99,9 +101,10 @@ router.delete('/:id', middleware.checkCampgroundOwner, function(req, res){
       // remove related comments
       Comment.deleteMany({_id: {$in: removedCamp.comments}}, function(err, removedComment){
         if (err) {
-          console.log(' cannot deleteMany comments related to campground');
+          console.log(' cannot delete Many comments related to campground');
         } else {
           // redirect
+          req.flash('success', 'Your Campground Has Been Deleted!');
           res.redirect('/campgrounds');
         }
       });
