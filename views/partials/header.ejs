@@ -44,3 +44,14 @@
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
+
+  <%if (msgError && msgError.length > 0){ %>
+    <div class='container'>
+      <div class='alert alert-danger' role='alert'><%= msgError%></div>
+    </div>
+  <% } %>
+  <%if (msgError && msgSuccess.length > 0){ %>
+    <div class='container'>
+      <div class='alert alert-success' role='alert'><%= msgSuccess%></div>
+    </div>
+  <% } %>

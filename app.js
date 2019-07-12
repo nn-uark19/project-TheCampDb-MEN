@@ -1,15 +1,16 @@
 //==============================================
 // import library
 console.log('Begin app.js');
-const express = require('express'),
-  bodyParser = require('body-parser'),
-  ejs = require('ejs'),
-  mongoose = require('mongoose'),
-  expressSession = require('express-session'),
-  passport = require('passport'),
-  LocalStrategy = require('passport-local'),
-  methodOverride = require('method-override'),
-  app = express();
+const express         = require('express'),
+      bodyParser      = require('body-parser'),
+      ejs             = require('ejs'),
+      mongoose        = require('mongoose'),
+      expressSession  = require('express-session'),
+      passport        = require('passport'),
+      LocalStrategy   = require('passport-local'),
+      methodOverride  = require('method-override'),
+      flash           = require('connect-flash'),
+      app             = express();
 // body-parser
 app.use(bodyParser.urlencoded({extended: true}));
 // ejs
@@ -18,6 +19,8 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 // method-override
 app.use(methodOverride('_method'));
+// connect-flash
+app.use(flash());
 
 //==============================================
 // setup database. db model Campground, Comment was already declared in seeds.js
@@ -48,9 +51,11 @@ passport.deserializeUser(User.deserializeUser());
 // global variable
 
 //==============================================
-// middleware for authentication
+// middleware for authentication, and flash message
 app.use(function(req, res, next){
   res.locals.currentUser = req.user;
+  res.locals.msgError = req.flash('error');
+  res.locals.msgSuccess = req.flash('success');
   next();
 });
 
