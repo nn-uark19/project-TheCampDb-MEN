@@ -13,6 +13,28 @@ Notice:
 
 
 ---------------------------------------------
+version 11
+- branch: master (merge from v11flaskUi)
+- new technology: refactor middleware to seperate file, flash messages feature
+- technology: 
+	* RESTful routes (edit, update, destroy) for nested route comments
+  * data associations (save author’s name to a campground, comment automactically)
+	* refactor routes (comments, camgrounds, user)
+	* authentication (express-session, passportjs, passport-local, passport-local-mongoose), 
+	* mongoose (mongodb, module.exports,  seeds), 
+	* RESTful routes, bootstrap, nodejs, expressjs
+- 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
+---------------
+Refactoring Middleware
+- /middleware/index.js
+
+Flash Message: Adding Bootstrap	Adding in Flash
+- demo working version
+- install and configure connect-flash
+- add bootstrap alerts to header {/views/partials/header.ejs}
+
+
+---------------------------------------------
 version 10
 - branch: master (merge from v10updateDestroy)
 - new technology: RESTful routes (edit, update, destroy) for nested route comments
