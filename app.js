@@ -11,9 +11,7 @@ const express = require('express'),
   methodOverride = require('method-override'),
   app = express();
 // body-parser
-app.use(bodyParser.urlencoded({ 
-  extended: true
-}));
+app.use(bodyParser.urlencoded({extended: true}));
 // ejs
 app.set('view engine', 'ejs'); 
 // custom css file
@@ -26,8 +24,8 @@ app.use(methodOverride('_method'));
 const Campground = require('./models/campground'),
   Comment = require('./models/comment'),
   User = require('./models/user');
-mongoose.connect('mongodb://localhost:27017/yelp_camp', {useNewUrlParser: true});
-// mongoose.connect('mongodb+srv://neil:nghia123@yelpcampcluster-eook0.mongodb.net/yelp_camp?retryWrites=true&w=majority', {useNewUrlParser: true});
+const dbUrl = process.env.DATABASEURL || 'mongodb://localhost:27017/yelp_camp';
+mongoose.connect(dbUrl, {useNewUrlParser: true});
 // const seedDb = require('./seeds');
 // seedDb();
 
@@ -58,12 +56,13 @@ app.use(function(req, res, next){
 
 //==============================================
 // listener server
-app.listen(3000, function () {
+app.listen(process.env.PORT || 3000, process.env.IP, function(){
   console.log('app.js is listeninig');
 });
 console.log('End app.js');
 
 //==============================================
+// routes
 // landing route
 app.get('/', function (req, res) {
   console.log('Route app.get(/)');
