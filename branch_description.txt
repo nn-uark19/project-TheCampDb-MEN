@@ -10,6 +10,7 @@ Notice:
 - notice the EDIT/UPDATE route (name in form needs to match the schema of the mongoose db that needs to be updated)
 ---------------------------------------------
 TECHNOLOGY
+	* css advance, background slider
 	* flash message (connect-flash) using express-session
 	* authorization using middleware, hiding buttons, refactor middleware
 	* authentication using express-session, passportjs, passport-local, passport-local-mongoose (register, login, logout)
@@ -17,13 +18,8 @@ TECHNOLOGY
 	* RESTful routes (INDEX, NEW, CREATE, SHOW, EDIT, UPDATE, DESTROY)
 	* nodejs, expressjs routes (sub-route /campgrounds/comments), expressjs template ejs, expressjs partials template (header.ejs, footer.ejs), expressjs refactor routes
 	* html, css (bootstrap)
-
-
----------------------------------------------
-version 11
-- branch: master (merge from v11flaskUi)
-- new technology: refactor middleware to seperate file, flash messages feature
-- technology: 
+	---------------
+	* css background slider 
 	* refactor middleware, flash message (connect-flash) (v11)
 	* campgrounds and comment RESTful routes (EDIT, UPDATE, DESTROY), authorization using middleware, hiding buttons (v10)
 	* data associations between users and campgrounds (change schema, req.user, save author’s name to a campgroundautomactically) (v9)
@@ -35,6 +31,23 @@ version 11
 	* refactor db (mongoose), seed file seeds.js, comment schema (v3)
 	* campground RESTful routes(NEW, CREATE, SHOW), mongoose (schema, connect mongodb) (v2)
 	* bootstrap, nodejs, expressjs routes, ejs, RESTful INDEX (v1)
+
+
+---------------------------------------------
+version 12
+- branch: master (merge from v12backgroundSlider)
+- new technology: css background slider from Ian
+- 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
+---------------
+Refactor landing page
+- Add background slide (https://github.com/nax3t/background-slider , https://github.com/nnguyen-uark/css-backgroundSlider)
+- nn add icon and navbar brand for index, landing pages
+
+
+---------------------------------------------
+version 11
+- branch: master (merge from v11flaskUi)
+- new technology: refactor middleware to seperate file, flash messages feature
 - 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 Refactoring Middleware
@@ -50,12 +63,6 @@ Flash Message: Adding Bootstrap	Adding in Flash
 version 10
 - branch: master (merge from v10updateDestroy)
 - new technology: RESTful routes (edit, update, destroy) for nested route comments
-- technology: 
-  * data associations (save author’s name to a campground, comment automactically)
-	* refactor routes (comments, camgrounds, user)
-	* authentication (express-session, passportjs, passport-local, passport-local-mongoose), 
-	* mongoose (mongodb, module.exports,  seeds), 
-	* RESTful routes, bootstrap, nodejs, expressjs
 - 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 Campground Edit and Update.	Editing Campgrounds
@@ -104,12 +111,6 @@ Comment Authorization.	Authorization Part 2: Comments
 version 9
 - branch: master (merge from v9campgroundUser)
 - new technology: data associations (save author’s name to campgrounds automactically)
-- technology: 
-  * data associations (save author’s name to a comment automactically)
-	* refactor routes (comments, camgrounds, user)
-	* authentication (express-session, passportjs, passport-local, passport-local-mongoose), 
-	* mongoose (mongodb, module.exports,  seeds), 
-	* RESTful routes, bootstrap, nodejs, expressjs
 - 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 YelpCamp: User Associations: Campground. User + Campgrounds
@@ -125,11 +126,6 @@ YelpCamp: User Associations: Campground. User + Campgrounds
 version 8
 - branch: master (merge from v8commentUser)
 - new technology: data associations (save author’s name to a comment automactically)
-- technology: 
-	* refactor routes (comments, camgrounds, user)
-	* authentication (express-session, passportjs, passport-local, passport-local-mongoose), 
-	* mongoose (mongodb, module.exports,  seeds), 
-	* RESTful routes, bootstrap, nodejs, expressjs
 - 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 YelpCamp: User Associations: Comment. Users + Comments
@@ -153,10 +149,6 @@ YelpCamp: User Associations: Comment	Users + Comments
 version 7
 - branch: master (merge from v7refactorRoutes)
 - new technology: refactor routes
-- technology: 
-	* authentication (express-session, passportjs, passport-local, passport-local-mongoose), 
-	* mongoose (mongodb, module.exports,  seeds), 
-	* RESTful routes, bootstrap, nodejs, expressjs
 - 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 YelpCamp: Refactoring Routes	Refactor the routes
@@ -167,7 +159,6 @@ YelpCamp: Refactoring Routes	Refactor the routes
 version 6
 branch: v6auth
 new technology: auth (express-session, passportjs, passport-local, passport-local-mongoose)
-technology: mongoose (mongodb, module.exports,  seeds), RESTful, bootstrap, nodejs, expressjs
 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 YelpCamp: Adding Auth Pt 1	Add User Model
@@ -196,7 +187,6 @@ YelpCamp: Adding Auth Pt 5	Show/ Hide Links
 version 5
 branch: master (merge from v5styleShowPage)
 new technology: custom css file
-technology: public/stylesheets/main.css, mongoose (mongodb, module.exports,  seeds), RESTful, bootstrap, nodejs, expressjs
 ---------------
 YelpCamp: Styling Comments Pt1.	Style Show Page
 - add sidebar to show page {bootstrap grid 3-9, comment well}
@@ -213,7 +203,6 @@ version 4
 this prevent from master to fast forward
 branch: master (merge from v4comments)
 new technology: nested routes
-technology: mongoose (mongodb, module.exports,  seeds), RESTful, bootstrap, nodejs, expressjs
 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 YelpCamp: Creating Comments Pt1	Comment New/Create. Start of v4
@@ -235,7 +224,6 @@ YelpCamp: Creating Comments Pt2
 version 3
 branch: master (merge from v3seeds)
 new technology: mongoose exports,  mongoose seeds
-technology: mongoose (connect mongodb), RESTful, bootstrap, nodejs, expressjs
 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 YelpCamp: Refactoring App.js	
@@ -256,7 +244,6 @@ YelpCamp: Comment Model.	Add the Comment model
 version 2
 branch: master (merge from v2mongoose)
 new technology: mongoose, RESTful 
-technology: mongoose, RESTful, bootstrap, nodejs, expressjs
 ---------------
 YelpCamp: Adding Mongoose	
 - install and configure mongoose {localhost/yelp_camp}
