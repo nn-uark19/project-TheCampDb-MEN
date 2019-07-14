@@ -1,5 +1,20 @@
-<% include partials/header.ejs%>
+<!-- already has the opening body in header.ejs-->    
+<% include partials/header%>
 
-<h1>Landing page</h1>
+<div id="bodyLanding">
+  <div id="landing-header">
+  <h1>Welcome to YelpCamp!</h1>
+  <a href="/campgrounds" class="btn btn-lg btn-success">View All Campgrounds</a>
+  </div>
 
-<% include partials/footer.ejs%>
+  <ul class="slideshow">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+
+<!-- already has the closing /body in footer.ejs--> 
+<% include partials/footer %>
