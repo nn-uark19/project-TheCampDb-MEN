@@ -10,7 +10,7 @@ Notice:
 - notice the EDIT/UPDATE route (name in form needs to match the schema of the mongoose db that needs to be updated)
 ---------------------------------------------
 TECHNOLOGY
-	* css advance, background slider
+	* css advance (background slider, ultimate footer)
 	* flash message (connect-flash) using express-session
 	* authorization using middleware, hiding buttons, refactor middleware
 	* authentication using express-session, passportjs, passport-local, passport-local-mongoose (register, login, logout)
@@ -19,7 +19,8 @@ TECHNOLOGY
 	* nodejs, expressjs routes (sub-route /campgrounds/comments), expressjs template ejs, expressjs partials template (header.ejs, footer.ejs), expressjs refactor routes
 	* html, css (bootstrap)
 ---------------
-	* css background slider 
+	* css ultimate footer, add db camprgound price property (v13)
+	* css background slider (v12)
 	* refactor middleware, flash message (connect-flash) (v11)
 	* campgrounds and comment RESTful routes (EDIT, UPDATE, DESTROY), authorization using middleware, hiding buttons (v10)
 	* data associations between users and campgrounds (change schema, req.user, save author’s name to a campgroundautomactically) (v9)
@@ -31,6 +32,19 @@ TECHNOLOGY
 	* refactor db (mongoose), seed file seeds.js, comment schema (v3)
 	* campground RESTful routes(NEW, CREATE, SHOW), mongoose (schema, connect mongodb) (v2)
 	* bootstrap, nodejs, expressjs routes, ejs, RESTful INDEX (v1)
+
+
+---------------------------------------------
+version 13
+- branch: master (merge from v13campgroundPrice)
+- new technology: css footer and db camprgound price property 
+- 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
+---------------
+Add price to campground model
+- Add price to campground model as a String datatype
+- Add price to views/campgrounds/new.ejs and views/campgrounds/edit.ejs (new and edit forms)
+- Add price to views/camprounds/show.ejs (campground show page)
+- https://github.com/nax3t/dynamic-price
 
 
 ---------------------------------------------
