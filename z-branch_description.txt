@@ -18,7 +18,7 @@ TECHNOLOGY
 	* RESTful routes (INDEX, NEW, CREATE, SHOW, EDIT, UPDATE, DESTROY)
 	* nodejs, expressjs routes (sub-route /campgrounds/comments), expressjs template ejs, expressjs partials template (header.ejs, footer.ejs), expressjs refactor routes
 	* html, css (bootstrap)
-	---------------
+---------------
 	* css background slider 
 	* refactor middleware, flash message (connect-flash) (v11)
 	* campgrounds and comment RESTful routes (EDIT, UPDATE, DESTROY), authorization using middleware, hiding buttons (v10)
