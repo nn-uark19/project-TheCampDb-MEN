@@ -8,6 +8,15 @@ Notice:
 	+ Vice versa, the js routes/files (like /routes/campgroundRoutes.js) can access req.user but not currentUser
 - useful redirect: res.redirect('back');
 - notice the EDIT/UPDATE route (name in form needs to match the schema of the mongoose db that needs to be updated)
+---------------------------------------------
+TECHNOLOGY
+	* flash message (connect-flash) using express-session
+	* authorization using middleware, hiding buttons, refactor middleware
+	* authentication using express-session, passportjs, passport-local, passport-local-mongoose (register, login, logout)
+ 	* mongoose (schema, connect mongodb, refactor, seed file seeds.js), data associations(change schema, req.user, save author’s name to a campground, comment automactically)
+	* RESTful routes (INDEX, NEW, CREATE, SHOW, EDIT, UPDATE, DESTROY)
+	* nodejs, expressjs routes (sub-route /campgrounds/comments), expressjs template ejs, expressjs partials template (header.ejs, footer.ejs), expressjs refactor routes
+	* html, css (bootstrap)
 
 
 ---------------------------------------------
@@ -15,12 +24,17 @@ version 11
 - branch: master (merge from v11flaskUi)
 - new technology: refactor middleware to seperate file, flash messages feature
 - technology: 
-	* RESTful routes (edit, update, destroy) for nested route comments
-  * data associations (save author’s name to a campground, comment automactically)
-	* refactor routes (comments, camgrounds, user)
-	* authentication (express-session, passportjs, passport-local, passport-local-mongoose), 
-	* mongoose (mongodb, module.exports,  seeds), 
-	* RESTful routes, bootstrap, nodejs, expressjs
+	* refactor middleware, flash message (connect-flash) (v11)
+	* campgrounds and comment RESTful routes (EDIT, UPDATE, DESTROY), authorization using middleware, hiding buttons (v10)
+	* data associations between users and campgrounds (change schema, req.user, save author’s name to a campgroundautomactically) (v9)
+	* data associations between users and comments (change schema, req.user, save author’s name to a comment automactically) (v8)
+	* refactor routes (comments, camgrounds, user) (v7)
+	* user schema, user RESTful routes (NEW, CREATE), passpord (register, login, logout) (v6)
+	* style with bootstrap (v5)
+	* comment RESTful NESTED routes (NEW, CREATE), expressjs partials template (header.ejs, footer.ejs) (v4)
+	* refactor db (mongoose), seed file seeds.js, comment schema (v3)
+	* campground RESTful routes(NEW, CREATE, SHOW), mongoose (schema, connect mongodb) (v2)
+	* bootstrap, nodejs, expressjs routes, ejs, RESTful INDEX (v1)
 - 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 Refactoring Middleware
