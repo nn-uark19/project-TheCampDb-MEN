@@ -35,16 +35,28 @@ TECHNOLOGY
 
 
 ---------------------------------------------
+version 14
+- branch: master (merge from ...)
+- new technology: ...
+- 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
+---------------
+http://slides.com/nax3t/yelpcamp-refactor-ui
+UI Improvements 
+(login and signup, nav-bar, registration flash message) 
+
+
+
+---------------------------------------------
 version 13
 - branch: master (merge from v13campgroundPrice)
 - new technology: css footer and db camprgound price property 
 - 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
+https://github.com/nax3t/dynamic-price
 Add price to campground model
 - Add price to campground model as a String datatype
 - Add price to views/campgrounds/new.ejs and views/campgrounds/edit.ejs (new and edit forms)
 - Add price to views/camprounds/show.ejs (campground show page)
-- https://github.com/nax3t/dynamic-price
 
 
 ---------------------------------------------
