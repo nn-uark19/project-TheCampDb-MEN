@@ -1,5 +1,6 @@
 body {
   /* background: radial-gradient(black, transparent); */
+  padding-bottom: 40px; /* for footer */
 }
 
 .delete-button {
@@ -14,9 +15,10 @@ body {
   margin: 0 0 15px 0;
 }
 
+/* footer.ejs */
 #footer {
   /* position */
-  position:absolute;
+  position:fixed;
   bottom:0;
   width:100%;
   height:40px;   /* Height of the footer */
