@@ -1,5 +1,6 @@
 //==============================================
 // import library
+require('dotenv').config()
 console.log('Begin app.js');
 const express         = require('express'),
       bodyParser      = require('body-parser'),

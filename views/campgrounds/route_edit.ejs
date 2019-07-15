@@ -2,19 +2,36 @@
 
 <%# content %>
 <h1 class="text-center">Edit <%=camp.name%></h1>
-<div id="form" style="width:30%; margin: 25px auto">
-  <form action='/campgrounds/<%=camp._id%>?_method=PUT' method='POST'>
+<div id="form" style="width:60%; margin: 25px auto">
+  <form action='/campgrounds/<%=camp._id%>?_method=PUT' method='POST' class="form-horizontal">
     <div class="form-group">
-      <input name='newCamp[name]' class="form-control" value='<%=camp.name%>'>
+      <label for="name" class="col-sm-3 control-label">Campground Name </label>
+      <div class="col-sm-9">
+        <input id="name" name='newCamp[name]' type="text" class="form-control" value='<%=camp.name%>'>
+      </div>
     </div>
     <div class="form-group">
-      <input name='newCamp[image]' class="form-control" value='<%=camp.image%>'>
-    </div> 
+      <label for="url" class="col-sm-3 control-label">Image url</label>
+      <div class="col-sm-9">
+        <input id="url" name='newCamp[image]' type="text" class="form-control" value='<%=camp.image%>'>
+      </div>
+    </div>
     <div class="form-group">
-      <input name='newCamp[price]' type="number" min="0.01" step="0.01" class="form-control" value='<%=camp.price%>'>
-    </div> 
+      <label for="price" class="col-sm-3 control-label">Price</label>
+      <div class="col-sm-9">
+        <input id="price" name='newCamp[price]' type="number" class="form-control" value='<%=camp.price%>' min="0.01" step=0.01>
+      </div>
+    </div>
     <div class="form-group">
-      <textarea name='newCamp[description]' rows="10" class="form-control"><%=camp.description%></textarea>
+      <label for="location" class="control-label col-sm-3">Location</label>
+      <div class="col-sm-9">
+        <input id="location" name='newCamp[location]' 
+          type="text" class="form-control" value='<%=camp.location%>'>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Campground Description</label>
+      <textarea name='newCamp[description]' rows="10" class="form-control"><%=camp.description%></textarea> 
     </div>
     <button class="btn btn-primary btn-block btn-lg">Submit</button>
   </form>

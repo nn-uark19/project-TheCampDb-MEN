@@ -3,6 +3,19 @@ const express = require('express');
 const router = express.Router();
 const Campground = require('../models/campground');
 const middleware = require('../middleware');
+const NodeGeocoder = require('node-geocoder');
+
+//==============================================
+// setup node-geocoder
+var options = {
+  provider: 'google',
+ 
+  // Optional depending on the providers
+  httpAdapter: 'https', // Default
+  apiKey: process.env.GEOCODER_API_KEY, // for Mapquest, OpenCage, Google Premier
+  formatter: null         // 'gpx', 'string', ...
+};
+const geocoder = NodeGeocoder(options);
 
 //==============================================
 // for campgrounds
@@ -18,6 +31,7 @@ router.get('/', function (req, res) {
       })
     }
   });
+  console.log(process.env.GEOCODER_API_KEY);
 })
 
 // NEW route (/campgrounds/new GET): to add campground, use post /campgrounds
@@ -29,20 +43,33 @@ router.get('/new', middleware.isLoggedIn, function (req, res) {
 // CREATE route (/campgrounds POST): to insert data, redirect to get /campgrounds GET
 router.post('/', middleware.isLoggedIn, function (req, res) {
   console.log('Route_create app.post(/campgrounds)');
+  // build newCamp object to insert to db
   const newCamp = req.body.newCamp;
   newCamp.author = {
     id: req.user._id,
     username: req.user.username
   };
-  Campground.create(newCamp, function (err, newCamp) {
-    if (err) {
-      console.log(err);
+  geocoder.geocode(req.body.newCamp.location, function(err, campLocation){
+    if (err || !campLocation.length) {
+      req.flash('error', 'Invalid Address');
+      console.log(err.message);
+      res.redirect('back');
     } else {
-      console.log(' mongoose.create successfully, redirect to app.get(/campgrounds)');
-      req.flash('success', 'Your campground has been successfully created!')
-      res.redirect('/campgrounds');
+      newCamp.lat = campLocation[0].latitude;
+      newCamp.lng = campLocation[0].longitude;
+      newCamp.location = campLocation[0].formattedAddress;
+      Campground.create(newCamp, function (err, newCamp) {
+        if (err) {
+          console.log(err);
+        } else {
+          console.log(' mongoose.create successfully, redirect to app.get(/campgrounds)');
+          req.flash('success', 'Your campground has been successfully created!')
+          res.redirect('/campgrounds');
+        }
+      });
     }
-  });
+  })
+
 })
 
 // SHOW	route (/campgrounds/:id	GET)

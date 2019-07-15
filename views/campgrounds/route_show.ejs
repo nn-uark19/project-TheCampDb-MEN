@@ -7,7 +7,9 @@
       <a href="#" class="list-group-item">Category 2</a>
       <a href="#" class="list-group-item">Category 3</a>
     </ul>
+    <div id="map"></div>
   </div>
+
   <div class="col-md-9">
     <div class="thumbnail">
       <h1> <%= camp.name %> </h1>
@@ -56,5 +58,39 @@
 </div>
 
 <a href='/campgrounds'>Go Back</a>
+
+<!-- prepare Google Maps API to show location -->
+<script>
+  function initMap() {
+    var lat = <%= camp.lat %>;
+    var lng = <%= camp.lng %>;
+    var center = {lat: lat, lng: lng };
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 8,
+        center: center,
+        scrollwheel: false
+    });    
+    
+    var contentString = `
+      <strong><%= camp.name %><br />
+      <%= camp.location %></strong>
+      <p><%= camp.description %></p>
+    `
+    var infowindow = new google.maps.InfoWindow({
+      content: contentString
+    });
+    var marker = new google.maps.Marker({
+        position: center,
+        map: map
+    });
+    marker.addListener('click', function() {
+      infowindow.open(map, marker);
+    });
+  }
+</script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDX3i0ahn0ntpuIU5hXnBuSmimPXU8fPH4&callback=initMap">
+</script>
+
 
 <% include ../partials/footer%>
