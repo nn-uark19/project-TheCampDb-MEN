@@ -36,6 +36,8 @@ router.get('/login', function(req, res){
 
 // login route- check
 router.post('/login', passport.authenticate('local', {
+  successFlash: 'Welcome back! You have successfully log in!',
+  failureFlash: 'Invalid username or password.',
   successRedirect: '/campgrounds',
   failureRedirect: '/login'
 }), function(req, res){
