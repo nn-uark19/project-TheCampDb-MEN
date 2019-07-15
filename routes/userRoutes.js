@@ -8,7 +8,7 @@ const User = require('../models/user');
 // NEW route
 router.get('/register', function(req, res){
   console.log('Route app.get(/register)');
-  res.render('./profile/route_register');
+  res.render('./profile/route_register', {page: 'register'});
 });
 
 // CREATE route
@@ -31,7 +31,7 @@ router.post('/register', function(req, res){
 // login route- show
 router.get('/login', function(req, res){
   console.log('Route app.get(/login)');
-  res.render('./profile/route_login');
+  res.render('./profile/route_login', {page: 'login'});
 });
 
 // login route- check

@@ -21,6 +21,8 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
+
+
 <body>
   <%# navbar %>
   <nav class="navbar navbar-default">
@@ -46,8 +48,12 @@
             <li><a href="#">Signed in as <%=currentUser.username%></a></li>
             <li><a href="/logout">Logout</a></li>
           <%} else {%>
-            <li><a href="/login">Login</a></li>
-            <li><a href="/register">Sign Up</a></li>
+            <li class="<%= typeof page !== 'undefined' && page === 'login' ? 'active' : ''%>">
+              <a href="/login">Login</a>
+             </li>
+            <li class="<%= typeof page !== 'undefined' && page === 'register' ? 'active' : ''%>">
+              <a href="/register">Sign Up</a>
+             </li>
           <%}%> 
         </ul>
       </div><!-- /.navbar-collapse -->
@@ -64,3 +70,6 @@
       <div class='alert alert-success' role='alert'><%= msgSuccess%></div>
     </div>
   <% } %>
+
+
+  <div class="container">
