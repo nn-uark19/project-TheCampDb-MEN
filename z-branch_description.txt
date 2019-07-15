@@ -11,7 +11,7 @@ Notice:
 ---------------------------------------------
 TECHNOLOGY
 	* css advance (background slider, ultimate footer)
-	* flash message (connect-flash) using express-session
+	* flash message (connect-flash) using express-session, flash message for authentication
 	* authorization using middleware, hiding buttons, refactor middleware
 	* authentication using express-session, passportjs, passport-local, passport-local-mongoose (register, login, logout)
  	* mongoose (schema, connect mongodb, refactor, seed file seeds.js), data associations(change schema, req.user, save author’s name to a campground, comment automactically)
@@ -19,6 +19,8 @@ TECHNOLOGY
 	* nodejs, expressjs routes (sub-route /campgrounds/comments), expressjs template ejs, expressjs partials template (header.ejs, footer.ejs), expressjs refactor routes
 	* html, css (bootstrap)
 ---------------
+DEVELOPMENT
+	* style login/register using bootstrap, flash message for login authentication (v14)
 	* css ultimate footer, add db camprgound price property (v13)
 	* css background slider (v12)
 	* refactor middleware, flash message (connect-flash) (v11)
@@ -36,20 +38,22 @@ TECHNOLOGY
 
 ---------------------------------------------
 version 14
-- branch: master (merge from ...)
-- new technology: ...
+- branch: master (merge from v14uiImprovement)
+- new development: flash message for authentication 
 - 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 http://slides.com/nax3t/yelpcamp-refactor-ui
 UI Improvements 
-(login and signup, nav-bar, registration flash message) 
-
+- template for all website with <div class="container"></div> in header and footer. Remove all container from all other files in views folders
+- apply bootstrap to style login and register page
+- add active class for login/register using ejs
+- add flash message for login authentication using http://www.passportjs.org/docs/authenticate/
 
 
 ---------------------------------------------
 version 13
 - branch: master (merge from v13campgroundPrice)
-- new technology: css footer and db camprgound price property 
+- new development: css footer and db camprgound price property 
 - 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 https://github.com/nax3t/dynamic-price
@@ -62,7 +66,7 @@ Add price to campground model
 ---------------------------------------------
 version 12
 - branch: master (merge from v12backgroundSlider)
-- new technology: css background slider from Ian
+- new development: css background slider from Ian
 - 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 Refactor landing page
@@ -73,7 +77,7 @@ Refactor landing page
 ---------------------------------------------
 version 11
 - branch: master (merge from v11flaskUi)
-- new technology: refactor middleware to seperate file, flash messages feature
+- new development: refactor middleware to seperate file, flash messages feature
 - 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 Refactoring Middleware
@@ -88,7 +92,7 @@ Flash Message: Adding Bootstrap	Adding in Flash
 ---------------------------------------------
 version 10
 - branch: master (merge from v10updateDestroy)
-- new technology: RESTful routes (edit, update, destroy) for nested route comments
+- new development: RESTful routes (edit, update, destroy) for nested route comments
 - 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 Campground Edit and Update.	Editing Campgrounds
@@ -136,7 +140,7 @@ Comment Authorization.	Authorization Part 2: Comments
 ---------------------------------------------
 version 9
 - branch: master (merge from v9campgroundUser)
-- new technology: data associations (save author’s name to campgrounds automactically)
+- new development: data associations (save author’s name to campgrounds automactically)
 - 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 YelpCamp: User Associations: Campground. User + Campgrounds
@@ -151,7 +155,7 @@ YelpCamp: User Associations: Campground. User + Campgrounds
 ---------------------------------------------
 version 8
 - branch: master (merge from v8commentUser)
-- new technology: data associations (save author’s name to a comment automactically)
+- new development: data associations (save author’s name to a comment automactically)
 - 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 YelpCamp: User Associations: Comment. Users + Comments
@@ -174,7 +178,7 @@ YelpCamp: User Associations: Comment	Users + Comments
 ---------------------------------------------
 version 7
 - branch: master (merge from v7refactorRoutes)
-- new technology: refactor routes
+- new development: refactor routes
 - 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 YelpCamp: Refactoring Routes	Refactor the routes
@@ -184,7 +188,7 @@ YelpCamp: Refactoring Routes	Refactor the routes
 ---------------------------------------------
 version 6
 branch: v6auth
-new technology: auth (express-session, passportjs, passport-local, passport-local-mongoose)
+new development: auth (express-session, passportjs, passport-local, passport-local-mongoose)
 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 YelpCamp: Adding Auth Pt 1	Add User Model
@@ -212,7 +216,7 @@ YelpCamp: Adding Auth Pt 5	Show/ Hide Links
 ---------------------------------------------
 version 5
 branch: master (merge from v5styleShowPage)
-new technology: custom css file
+new development: custom css file
 ---------------
 YelpCamp: Styling Comments Pt1.	Style Show Page
 - add sidebar to show page {bootstrap grid 3-9, comment well}
@@ -226,9 +230,8 @@ YelpCamp: Styling Comments Pt2
 
 ---------------------------------------------
 version 4
-this prevent from master to fast forward
 branch: master (merge from v4comments)
-new technology: nested routes
+new development: nested routes
 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 YelpCamp: Creating Comments Pt1	Comment New/Create. Start of v4
@@ -249,7 +252,7 @@ YelpCamp: Creating Comments Pt2
 ---------------------------------------------
 version 3
 branch: master (merge from v3seeds)
-new technology: mongoose exports,  mongoose seeds
+new development: mongoose exports,  mongoose seeds
 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 YelpCamp: Refactoring App.js	
@@ -269,7 +272,7 @@ YelpCamp: Comment Model.	Add the Comment model
 ---------------------------------------------
 version 2
 branch: master (merge from v2mongoose)
-new technology: mongoose, RESTful 
+new development: mongoose, RESTful 
 ---------------
 YelpCamp: Adding Mongoose	
 - install and configure mongoose {localhost/yelp_camp}
@@ -291,7 +294,7 @@ YelpCamp: Campground Show Page
 ---------------------------------------------
 version 1
 branch: master
-technology: bootstrap, nodejs, expressjs
+development: bootstrap, nodejs, expressjs
 ---------------
 YelpCamp: Initial Routes	
 - add landing page {app.get(‘/’), … landing.ejs}
