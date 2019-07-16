@@ -10,6 +10,7 @@ Notice:
 - notice the EDIT/UPDATE route (name in form needs to match the schema of the mongoose db that needs to be updated)
 ---------------------------------------------
 TECHNOLOGY
+	* creation time using moment js
 	* google maps API (maps js API + geocoder API)
 	* css advance (background slider, ultimate footer)
 	* flash message (connect-flash) using express-session, flash message for authentication
@@ -21,6 +22,7 @@ TECHNOLOGY
 	* html, css (bootstrap)
 ---------------
 DEVELOPMENT
+	* creation time for campground/ comment using moment js (v16)
 	* google maps API (maps js API + geocoder API) (v15) 
 	* style login/register using bootstrap, flash message for login authentication (v14)
 	* css ultimate footer, add db camprgound price property (v13)
@@ -37,10 +39,22 @@ DEVELOPMENT
 	* campground RESTful routes(NEW, CREATE, SHOW), mongoose (schema, connect mongodb) (v2)
 	* bootstrap, nodejs, expressjs routes, ejs, RESTful INDEX (v1)
 
+---------------------------------------------
+version 16
+- branch: master (merge from v16createTime)
+- new development: creation time for campground/ comment using moment js
+- 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
+---------------
+Setup
+- Install package moment
+- include package in app.js (above passport config code)
+- Update Campground and Comment Models {add createdAt}
+- Use Moment in Your show.ejs File {for campground, and comment}
+
 
 ---------------------------------------------
 version 15
-- branch: master (merge from ...)
+- branch: master (merge from v15googleApi)
 - new development: google maps API (maps js API + geocoder API)
 - 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
