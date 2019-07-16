@@ -5,7 +5,16 @@ body {
 }
 
 /* ========================================== */
-/* show page, button for Delete campground/comment */
+/* Google Maps, show page /views/campgrounds/route_show.ejs,  */
+#map {
+  height: 400px;
+  width: 100%;
+  border: 1px solid rgb(221, 221, 221);
+}
+
+
+/* ========================================== */
+/*button for Delete campground/comment, show page /views/campgrounds/route_show.ejs,  */
 .delete-button {
   display: inline;
 }
@@ -19,7 +28,7 @@ body {
 }
 
 /* ========================================== */
-/* footer.ejs */
+/* /views/partials/footer.ejs */
 #footer {
   /* position */
   position:fixed;
@@ -35,9 +44,11 @@ body {
 }
 
 /* ========================================== */
-/* Google Maps */
-#map {
-  height: 400px;
-  width: 100%;
-  border: 1px solid rgb(221, 221, 221);
+/* intro box for each campgrounds, index page /views/campgrounds/route_index.ejs,  */ 
+.campIntro {
+  height: 250px;
+}
+
+.campIntroText {
+  height: 38px;
 }

@@ -31,7 +31,6 @@ router.get('/', function (req, res) {
       })
     }
   });
-  console.log(process.env.GEOCODER_API_KEY);
 })
 
 // NEW route (/campgrounds/new GET): to add campground, use post /campgrounds

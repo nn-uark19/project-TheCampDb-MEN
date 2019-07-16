@@ -10,6 +10,7 @@ Notice:
 - notice the EDIT/UPDATE route (name in form needs to match the schema of the mongoose db that needs to be updated)
 ---------------------------------------------
 TECHNOLOGY
+	* google maps API (maps js API + geocoder API)
 	* css advance (background slider, ultimate footer)
 	* flash message (connect-flash) using express-session, flash message for authentication
 	* authorization using middleware, hiding buttons, refactor middleware
@@ -20,6 +21,7 @@ TECHNOLOGY
 	* html, css (bootstrap)
 ---------------
 DEVELOPMENT
+	* google maps API (maps js API + geocoder API) (v15) 
 	* style login/register using bootstrap, flash message for login authentication (v14)
 	* css ultimate footer, add db camprgound price property (v13)
 	* css background slider (v12)
@@ -39,7 +41,7 @@ DEVELOPMENT
 ---------------------------------------------
 version 15
 - branch: master (merge from ...)
-- new development: google maps API
+- new development: google maps API (maps js API + geocoder API)
 - 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 Resources
@@ -65,6 +67,49 @@ Geocoding API/ Google Maps API (https://developers.google.com/maps/documentation
  + install package node-geocoder. include the mandatory package include to code /routes/campgrounds.js
  + modify campground create route (post), update route (put route)
 - Remove localhost from restriction. Key1public is in /views/campgrounds/route_show.ejs, people can see and use it
+
+
+---------------------------------------------
+version 15
+- branch: master (merge from v15googleApi)
+- new development: Maps js API + Geocoder API
+- 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
+---------------
+Resources
+- https://www.youtube.com/watch?v=B4OuCjQLJ9k
+- https://webdev.slides.com/nax3t/yelpcamp-refactor-google-maps#/
+- https://github.com/nax3t/google-maps-api
+- (official) https://developers.google.com/maps/documentation/
+
+Setup Geocoder API + Add the secretKey to env
+- Create a new project
+- Enable Geocoder API
+- Get key for Geocoding API {key2Secret no restrictions}
+- install package dotenv. Add the GEOCODER_API_KEY=<key2Secret> to .env file
+- protect the key2Secret from github by updating .gitignore file
+- Add to application as ENV variable {GEOCODER_API_KEY=<key2Secret>}
+- set env for heroku {heroku config:set GEOCODER_API_KEY=<key2Secret>}
+
+Use Geocoder API (get coordinate from location)
+- install package node-geocoder. include the mandatory package include to code /routes/campgrounds.js
+- Modify campground model {add location:String, lat:Number, and lng:Number}
+- Modify new and edit forms, add location input field {/views/campgrounds/route_new.ejs and route_edit.ejs}
+- Update campground routes. modify campground create route (post), update route (put route) to get the coordinate data
+
+Setup Maps js API 
+- Select the same project
+- Enable Maps js API
+- Get Maps js API Key {like credentials, key1Public}
+- Restrict Google Maps API Key {can add both local and heroku to key1}
+- Add Google Maps scripts to your application {/views/campgrounds/route_show.ejs, edit to use key1Public}
+
+Use Maps js API (show map on website)
+- Display the campground location in show.ejs {add div for map in route_show.ejs, modify css /public/stylesheets/main.css}
+
+Remove localhost from restriction. 
+- Avoid people to take advantage of the public API key embedded in route_show.ejs
+- Remove localhost from restriction in GCP Credentials page
+
 
 ---------------------------------------------
 version 14

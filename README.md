@@ -12,14 +12,21 @@ Notice:
 - notice the EDIT/UPDATE route (name in form needs to match the schema of the mongoose db that needs to be updated)
 ---------------------------------------------
 TECHNOLOGY
-	* flash message (connect-flash) using express-session
+	* google maps API (maps js API + geocoder API)
+	* css advance (background slider, ultimate footer)
+	* flash message (connect-flash) using express-session, flash message for authentication
 	* authorization using middleware, hiding buttons, refactor middleware
 	* authentication using express-session, passportjs, passport-local, passport-local-mongoose (register, login, logout)
  	* mongoose (schema, connect mongodb, refactor, seed file seeds.js), data associations(change schema, req.user, save author’s name to a campground, comment automactically)
 	* RESTful routes (INDEX, NEW, CREATE, SHOW, EDIT, UPDATE, DESTROY)
 	* nodejs, expressjs routes (sub-route /campgrounds/comments), expressjs template ejs, expressjs partials template (header.ejs, footer.ejs), expressjs refactor routes
 	* html, css (bootstrap)
-	---------------
+---------------
+DEVELOPMENT
+	* google maps API (maps js API + geocoder API) (v15) 
+	* style login/register using bootstrap, flash message for login authentication (v14)
+	* css ultimate footer, add db camprgound price property (v13)
+	* css background slider (v12)
 	* refactor middleware, flash message (connect-flash) (v11)
 	* campgrounds and comment RESTful routes (EDIT, UPDATE, DESTROY), authorization using middleware, hiding buttons (v10)
 	* data associations between users and campgrounds (change schema, req.user, save author’s name to a campgroundautomactically) (v9)
@@ -34,20 +41,129 @@ TECHNOLOGY
 
 
 ---------------------------------------------
-version 12
-- branch: master (merge from v12backgroundSlider)
-- new technology: css background slider from Ian
+version 15
+- branch: master (merge from ...)
+- new development: google maps API (maps js API + geocoder API)
 - 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
+Resources
+- https://www.youtube.com/watch?v=B4OuCjQLJ9k
+- https://webdev.slides.com/nax3t/yelpcamp-refactor-google-maps#/
+- https://github.com/nax3t/google-maps-api
+
+Geocoding API/ Google Maps API (https://developers.google.com/maps/documentation/geocoding/get-api-key)
+- Create a new project
+- Get Google Maps API Key {like credentials, key1Public}
+- Restrict Google Maps API Key {can add both local and heroku to key1}
+- Enable Geocoding API
+- Get another key for Geocoding API {key2Secret no restrictions}
+ + install package dotenv. Add the GEOCODER_API_KEY=<key2Secret> to .env file
+ + protect the key2Secret from github by updating .gitignore file
+ + Add to application as ENV variable {GEOCODER_API_KEY=<key2Secret>}
+ + set env for heroku {heroku config:set GEOCODER_API_KEY=<key2Secret>}
+- Add Google Maps scripts to your application {/views/campgrounds/route_show.ejs, edit to use key1Public}
+- Display the campground location in show.ejs {css /public/stylesheets/main.css}
+- Update campground model {add location:String, lat:Number, and lng:Number}
+- Update new and edit forms, add location input field {/views/campgrounds/route_new.ejs and route_edit.ejs}
+- Update campground routes
+ + install package node-geocoder. include the mandatory package include to code /routes/campgrounds.js
+ + modify campground create route (post), update route (put route)
+- Remove localhost from restriction. Key1public is in /views/campgrounds/route_show.ejs, people can see and use it
+
+
+---------------------------------------------
+version 15
+- branch: master (merge from v15googleApi)
+- new development: Maps js API + Geocoder API
+- 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
+---------------
+Resources
+- https://www.youtube.com/watch?v=B4OuCjQLJ9k
+- https://webdev.slides.com/nax3t/yelpcamp-refactor-google-maps#/
+- https://github.com/nax3t/google-maps-api
+- (official) https://developers.google.com/maps/documentation/
+
+Setup Geocoder API + Add the secretKey to env
+- Create a new project
+- Enable Geocoder API
+- Get key for Geocoding API {key2Secret no restrictions}
+- install package dotenv. Add the GEOCODER_API_KEY=<key2Secret> to .env file
+- protect the key2Secret from github by updating .gitignore file
+- Add to application as ENV variable {GEOCODER_API_KEY=<key2Secret>}
+- set env for heroku {heroku config:set GEOCODER_API_KEY=<key2Secret>}
+
+Use Geocoder API (get coordinate from location)
+- install package node-geocoder. include the mandatory package include to code /routes/campgrounds.js
+- Modify campground model {add location:String, lat:Number, and lng:Number}
+- Modify new and edit forms, add location input field {/views/campgrounds/route_new.ejs and route_edit.ejs}
+- Update campground routes. modify campground create route (post), update route (put route) to get the coordinate data
+
+Setup Maps js API 
+- Select the same project
+- Enable Maps js API
+- Get Maps js API Key {like credentials, key1Public}
+- Restrict Google Maps API Key {can add both local and heroku to key1}
+- Add Google Maps scripts to your application {/views/campgrounds/route_show.ejs, edit to use key1Public}
+
+Use Maps js API (show map on website)
+- Display the campground location in show.ejs {add div for map in route_show.ejs, modify css /public/stylesheets/main.css}
+
+Remove localhost from restriction. 
+- Avoid people to take advantage of the public API key embedded in route_show.ejs
+- Remove localhost from restriction in GCP Credentials page
+
+
+---------------------------------------------
+version 14
+- branch: master (merge from v14uiImprovement)
+- new development: flash message for authentication 
+- 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
+---------------
+Resources
+- http://slides.com/nax3t/yelpcamp-refactor-ui
+
+UI Improvements 
+- template for all website with <div class="container"></div> in header and footer. Remove all container from all other files in views folders
+- apply bootstrap to style login and register page
+- add active class for login/register using ejs
+- add flash message for login authentication using http://www.passportjs.org/docs/authenticate/
+
+
+---------------------------------------------
+version 13
+- branch: master (merge from v13campgroundPrice)
+- new development: css footer and db camprgound price property 
+- 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
+---------------
+Resources
+- https://github.com/nax3t/dynamic-price
+- https://webdev.slides.com/nax3t/yelpcamp-refactor-pricing#/
+
+Add price to campground model
+- Add price to campground model as a String datatype
+- Add price to views/campgrounds/new.ejs and views/campgrounds/edit.ejs (new and edit forms)
+- Add price to views/camprounds/show.ejs (campground show page)
+
+
+---------------------------------------------
+version 12
+- branch: master (merge from v12backgroundSlider)
+- new development: css background slider from Ian
+- 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
+---------------
+Resources
+- https://github.com/nax3t/background-slider
+- https://github.com/nnguyen-uark/yelpcamp-backgroundSlider
+
 Refactor landing page
-- Add background slide (https://github.com/nax3t/background-slider , https://github.com/nnguyen-uark/css-backgroundSlider)
+- Add background slide
 - nn add icon and navbar brand for index, landing pages
 
 
 ---------------------------------------------
 version 11
 - branch: master (merge from v11flaskUi)
-- new technology: refactor middleware to seperate file, flash messages feature
+- new development: refactor middleware to seperate file, flash messages feature
 - 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 Refactoring Middleware
@@ -62,13 +178,7 @@ Flash Message: Adding Bootstrap	Adding in Flash
 ---------------------------------------------
 version 10
 - branch: master (merge from v10updateDestroy)
-- new technology: RESTful routes (edit, update, destroy) for nested route comments
-- technology: 
-  * data associations (save author’s name to a campground, comment automactically)
-	* refactor routes (comments, camgrounds, user)
-	* authentication (express-session, passportjs, passport-local, passport-local-mongoose), 
-	* mongoose (mongodb, module.exports,  seeds), 
-	* RESTful routes, bootstrap, nodejs, expressjs
+- new development: RESTful routes (edit, update, destroy) for nested route comments
 - 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 Campground Edit and Update.	Editing Campgrounds
@@ -116,13 +226,7 @@ Comment Authorization.	Authorization Part 2: Comments
 ---------------------------------------------
 version 9
 - branch: master (merge from v9campgroundUser)
-- new technology: data associations (save author’s name to campgrounds automactically)
-- technology: 
-  * data associations (save author’s name to a comment automactically)
-	* refactor routes (comments, camgrounds, user)
-	* authentication (express-session, passportjs, passport-local, passport-local-mongoose), 
-	* mongoose (mongodb, module.exports,  seeds), 
-	* RESTful routes, bootstrap, nodejs, expressjs
+- new development: data associations (save author’s name to campgrounds automactically)
 - 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 YelpCamp: User Associations: Campground. User + Campgrounds
@@ -137,12 +241,7 @@ YelpCamp: User Associations: Campground. User + Campgrounds
 ---------------------------------------------
 version 8
 - branch: master (merge from v8commentUser)
-- new technology: data associations (save author’s name to a comment automactically)
-- technology: 
-	* refactor routes (comments, camgrounds, user)
-	* authentication (express-session, passportjs, passport-local, passport-local-mongoose), 
-	* mongoose (mongodb, module.exports,  seeds), 
-	* RESTful routes, bootstrap, nodejs, expressjs
+- new development: data associations (save author’s name to a comment automactically)
 - 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 YelpCamp: User Associations: Comment. Users + Comments
@@ -165,11 +264,7 @@ YelpCamp: User Associations: Comment	Users + Comments
 ---------------------------------------------
 version 7
 - branch: master (merge from v7refactorRoutes)
-- new technology: refactor routes
-- technology: 
-	* authentication (express-session, passportjs, passport-local, passport-local-mongoose), 
-	* mongoose (mongodb, module.exports,  seeds), 
-	* RESTful routes, bootstrap, nodejs, expressjs
+- new development: refactor routes
 - 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 YelpCamp: Refactoring Routes	Refactor the routes
@@ -179,8 +274,7 @@ YelpCamp: Refactoring Routes	Refactor the routes
 ---------------------------------------------
 version 6
 branch: v6auth
-new technology: auth (express-session, passportjs, passport-local, passport-local-mongoose)
-technology: mongoose (mongodb, module.exports,  seeds), RESTful, bootstrap, nodejs, expressjs
+new development: auth (express-session, passportjs, passport-local, passport-local-mongoose)
 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 YelpCamp: Adding Auth Pt 1	Add User Model
@@ -208,8 +302,7 @@ YelpCamp: Adding Auth Pt 5	Show/ Hide Links
 ---------------------------------------------
 version 5
 branch: master (merge from v5styleShowPage)
-new technology: custom css file
-technology: public/stylesheets/main.css, mongoose (mongodb, module.exports,  seeds), RESTful, bootstrap, nodejs, expressjs
+new development: custom css file
 ---------------
 YelpCamp: Styling Comments Pt1.	Style Show Page
 - add sidebar to show page {bootstrap grid 3-9, comment well}
@@ -223,10 +316,8 @@ YelpCamp: Styling Comments Pt2
 
 ---------------------------------------------
 version 4
-this prevent from master to fast forward
 branch: master (merge from v4comments)
-new technology: nested routes
-technology: mongoose (mongodb, module.exports,  seeds), RESTful, bootstrap, nodejs, expressjs
+new development: nested routes
 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 YelpCamp: Creating Comments Pt1	Comment New/Create. Start of v4
@@ -247,8 +338,7 @@ YelpCamp: Creating Comments Pt2
 ---------------------------------------------
 version 3
 branch: master (merge from v3seeds)
-new technology: mongoose exports,  mongoose seeds
-technology: mongoose (connect mongodb), RESTful, bootstrap, nodejs, expressjs
+new development: mongoose exports,  mongoose seeds
 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
 YelpCamp: Refactoring App.js	
@@ -268,8 +358,7 @@ YelpCamp: Comment Model.	Add the Comment model
 ---------------------------------------------
 version 2
 branch: master (merge from v2mongoose)
-new technology: mongoose, RESTful 
-technology: mongoose, RESTful, bootstrap, nodejs, expressjs
+new development: mongoose, RESTful 
 ---------------
 YelpCamp: Adding Mongoose	
 - install and configure mongoose {localhost/yelp_camp}
@@ -291,7 +380,7 @@ YelpCamp: Campground Show Page
 ---------------------------------------------
 version 1
 branch: master
-technology: bootstrap, nodejs, expressjs
+development: bootstrap, nodejs, expressjs
 ---------------
 YelpCamp: Initial Routes	
 - add landing page {app.get(‘/’), … landing.ejs}
