@@ -17,7 +17,7 @@ TECHNOLOGY
 	* authentication using express-session, passportjs, passport-local, passport-local-mongoose (register, login, logout)
  	* mongoose (schema, connect mongodb, refactor, seed file seeds.js), data associations(change schema, req.user, save author’s name to a campground, comment automactically)
 	* RESTful routes (INDEX, NEW, CREATE, SHOW, EDIT, UPDATE, DESTROY)
-	* nodejs, expressjs routes (sub-route /campgrounds/comments), expressjs template ejs, expressjs partials template (header.ejs, footer.ejs), expressjs refactor routes
+	* nodejs (nodemon, locus), expressjs routes (sub-route /campgrounds/comments), expressjs template ejs, expressjs partials template (header.ejs, footer.ejs), expressjs refactor routes
 	* html, css (bootstrap)
 ---------------
 DEVELOPMENT

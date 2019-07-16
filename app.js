@@ -22,6 +22,8 @@ app.use(express.static(__dirname + '/public'));
 app.use(methodOverride('_method'));
 // connect-flash
 app.use(flash());
+// moment js for time
+app.locals.moment = require('moment');
 
 //==============================================
 // setup database. db model Campground, Comment was already declared in seeds.js
