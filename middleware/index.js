@@ -24,7 +24,7 @@ middleware.checkCampgroundOwner = function(req, res, next) {
         return res.redirect('/login');
       } else {
         // check if logged-in user is the owner
-        if (!foundCampground.author.id.equals(req.user._id)){
+        if (!foundCampground.author.id.equals(req.user._id) && !req.user.isAdmin){
           console.log(' not owner of the campground - cannot edit/delete');
           req.flash('error', "You Don't Have The Authorization To Perform The Action!");
           res.redirect('back');
@@ -50,7 +50,7 @@ middleware.checkCommentOwner = function (req, res, next) {
         res.redirect('back');
       } else {
         // check if own
-        if (!foundComment.author.id.equals(req.user._id)) {
+        if (!foundComment.author.id.equals(req.user._id) && !req.user.isAdmin) {
           console.log(' Comment is not owned by this user');
           req.flash('error', "You Don't Have The Authorization To Perform The Action!");
           res.redirect('back');

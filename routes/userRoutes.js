@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const passport = require('passport');
 const User = require('../models/user');
+const ADMIN_CODE = 'secretCode';
 
 //==============================================
 // for user
@@ -15,6 +16,9 @@ router.get('/register', function(req, res){
 router.post('/register', function(req, res){
   console.log('Route app.post(/register)');
   const newUser = new User({username: req.body.username});
+  if (req.body.adminCheck === ADMIN_CODE) {
+    newUser.isAdmin = true;
+  }
   User.register(newUser, req.body.password, function(err, newUser){
     if (err) {
       console.log('Cannot create new User');
