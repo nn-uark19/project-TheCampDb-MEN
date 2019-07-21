@@ -10,6 +10,7 @@ Notice:
 - notice the EDIT/UPDATE route (name in form needs to match the schema of the mongoose db that needs to be updated)
 ---------------------------------------------
 TECHNOLOGY
+	* admin previlege (create admin users and functions for admin only)
 	* creation time using moment js
 	* google maps API (maps js API + geocoder API)
 	* css advance (background slider, ultimate footer)
@@ -22,6 +23,7 @@ TECHNOLOGY
 	* html, css (bootstrap)
 ---------------
 DEVELOPMENT
+	* admin previlege (create admin users and functions for admin only) (v17)
 	* creation time for campground/ comment using moment js (v16)
 	* google maps API (maps js API + geocoder API) (v15) 
 	* style login/register using bootstrap, flash message for login authentication (v14)
@@ -39,12 +41,33 @@ DEVELOPMENT
 	* campground RESTful routes(NEW, CREATE, SHOW), mongoose (schema, connect mongodb) (v2)
 	* bootstrap, nodejs, expressjs routes, ejs, RESTful INDEX (v1)
 
+
+---------------------------------------------
+version 17
+- branch: master (merge from v17admin)
+- new development: admin previlege (create admin users and functions for admin only)
+- 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
+---------------
+Add admin privilege 
+- Modify db to add admin property {isAdmin: {type: Boolean, default: false} }
+- Modify creation form to add admin secret code {/views/profile/route_register.ejs}  
+- Modify route file to process the new input {routes/userRoutes.ejs}
+
+Make edit/delete campground activated for admin
+- Modify to activate button in view {/views/campgrounds/route_show.ejs }
+- Modify middleware so admin can access the edit/update/delete routes
+
+Make edit/delete comment activated for admin
+- same as above
+
+
 ---------------------------------------------
 version 16
 - branch: master (merge from v16createTime)
 - new development: creation time for campground/ comment using moment js
 - 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
+Show creation time (eg 5 days ago) for campgrounds/comments
 Setup
 - Install package moment
 - include package in app.js (above passport config code)
