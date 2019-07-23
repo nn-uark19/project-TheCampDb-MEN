@@ -11,11 +11,12 @@ router.get('/new', middleware.isLoggedIn, function (req, res) {
   Campground.findById(req.params.id, function (err, foundCamp) {
     if (err) {
       console.log('Cannot find camp');
-    } else {
-      res.render('./comments/route_new', {
-        camp: foundCamp
-      });
+      req.flash('error', 'Please contact admin for more information about the error');
+      res.redirect('back');
     }
+    res.render('./comments/route_new', {
+      camp: foundCamp
+    });
   })
 });
 
@@ -35,27 +36,30 @@ router.post('/', middleware.isLoggedIn, function (req, res) {
   Comment.create(newComment, function (err, newComment) {
     if (err) {
       console.log('Cannot create comment from form');
-    } else {
-      // find the campground
-      Campground.findById(req.params.id, function (err, foundCamp) {
-        if (err) {
-          console.log('Cannot find camp');
-        } else {
-          // associate comment with camp
-          foundCamp.comments.push(newComment);
-          foundCamp.save(function (err, updatedCamp) {
-            if (err) {
-              console.log('Cannot save comment to campground');
-            } else {
-              // redirect
-              console.log('Comment added successfully, redirect to /campgrounds/:id');
-              req.flash('success', 'Your Comment Has Been Created!');
-              res.redirect('/campgrounds/' + updatedCamp._id);
-            }
-          });
-        }
-      })
+      req.flash('error', 'Please contact admin for more information about the error');
+      res.redirect('back');
     }
+    // find the campground
+    Campground.findById(req.params.id, function (err, foundCamp) {
+      if (err) {
+        console.log('Cannot find camp');
+        req.flash('error', 'Please contact admin for more information about the error');
+        res.redirect('back');
+      }
+      // associate comment with camp
+      foundCamp.comments.push(newComment);
+      foundCamp.save(function (err, updatedCamp) {
+        if (err) {
+          console.log('Cannot save comment to campground');
+          req.flash('error', 'Please contact admin for more information about the error');
+          res.redirect('back');
+        }
+        // redirect
+        console.log('Comment added successfully, redirect to /campgrounds/:id');
+        req.flash('success', 'Your Comment Has Been Created!');
+        res.redirect('/campgrounds/' + updatedCamp._id);
+      });
+    })
   })
 });
 
@@ -66,10 +70,10 @@ router.get('/:comment_id/edit', middleware.checkCommentOwner, function(req, res)
     Comment.findById(req.params.comment_id, function(err, foundComment){
       if (err) {
         console.log(' cannot find comment');
+        req.flash('error', 'Please contact admin for more information about the error');
         res.redirect('back');
-      } else {        
-        res.render('comments/route_edit', {comment: foundComment, campId: req.params.id});
-      }
+      }    
+      res.render('comments/route_edit', {comment: foundComment, campId: req.params.id});
     });
 });
 // update
@@ -78,11 +82,11 @@ router.put('/:comment_id', middleware.checkCommentOwner, function(req, res){
   Comment.findByIdAndUpdate(req.params.comment_id, req.body.newComment, function(err, updatedComment){
     if (err) {
       console.log(' cannot find and update comment');
+      req.flash('error', 'Please contact admin for more information about the error');
       res.redirect('back');
-    } else {
-      req.flash('success', 'Your Comment Has Been Updated!');
-      res.redirect('/campgrounds/' + req.params.id);
     }
+    req.flash('success', 'Your Comment Has Been Updated!');
+    res.redirect('/campgrounds/' + req.params.id);
   });
 });
 
@@ -94,23 +98,24 @@ router.delete('/:comment_id', middleware.checkCommentOwner, function(req, res){
   Campground.findById(req.params.id, function(err, foundCamp){
     if (err) {
       console.log(' cannot find campground having the equivalent comment');
+      req.flash('error', 'Please contact admin for more information about the error');
       res.redirect('back');
-    } else {
-      var commentIdex = foundCamp.comments.indexOf(req.params.comment_id);
-      foundCamp.comments.splice(commentIdex, 1);
-      foundCamp.save();
     }
+    var commentIdex = foundCamp.comments.indexOf(req.params.comment_id);
+    foundCamp.comments.splice(commentIdex, 1);
+    foundCamp.save();
   });
-    // remove comment
-    Comment.findByIdAndRemove(req.params.comment_id, function(err, removedComment){
-      if (err) {
-        console.log(' cannot find by id and remove comment');
-        res.redirect('back');
-      } else {
-        req.flash('success', 'Your Comment Has Been Deleted!');
-        res.redirect('/campgrounds/' + req.params.id);
-      }
-    });
+
+  // remove comment
+  Comment.findByIdAndRemove(req.params.comment_id, function(err, removedComment){
+    if (err) {
+      console.log(' cannot find by id and remove comment');
+      req.flash('error', 'Please contact admin for more information about the error');
+      res.redirect('back');
+    }
+    req.flash('success', 'Your Comment Has Been Deleted!');
+    res.redirect('/campgrounds/' + req.params.id);
+  });
 });
 
 module.exports = router;

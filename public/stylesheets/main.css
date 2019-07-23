@@ -46,7 +46,7 @@ body {
 /* ========================================== */
 /* intro box for each campgrounds, index page /views/campgrounds/route_index.ejs,  */ 
 .campIntro {
-  height: 280px;
+  /* height: 280px; */
 }
 
 .campIntroText {
