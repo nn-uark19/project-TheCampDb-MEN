@@ -54,10 +54,26 @@ router.post('/', middleware.isLoggedIn, function (req, res) {
           req.flash('error', 'Please contact admin for more information about the error');
           res.redirect('back');
         }
-        // redirect
-        console.log('Comment added successfully, redirect to /campgrounds/:id');
-        req.flash('success', 'Your Comment Has Been Created!');
-        res.redirect('/campgrounds/' + updatedCamp._id);
+        // associate comment with user
+        User.findById({_id: req.user._id},function(err, foundUser){
+          if (err) {
+            console.log(err);
+            req.flash('error', 'Please contact admin for more information about the error');
+            res.redirect('back');
+          }
+          foundUser.commentByUser.push(newComment);
+          foundUser.save(function(err, updatedUser){
+            if (err) {
+              console.log(err);
+              req.flash('error', 'Please contact admin for more information about the error');
+              res.redirect('back');
+            }
+            // redirect
+            console.log('Comment added successfully, redirect to /campgrounds/:id');
+            req.flash('success', 'Your Comment Has Been Created!');
+            res.redirect('/campgrounds/' + updatedCamp._id);
+          });
+        });
       });
     })
   })
@@ -105,7 +121,23 @@ router.delete('/:comment_id', middleware.checkCommentOwner, function(req, res){
     foundCamp.comments.splice(commentIdex, 1);
     foundCamp.save();
   });
-
+  // remove user.commentByUser from user db
+  User.findById({_id: req.user._id}, function(err, foundUser){
+    if (err) {
+      console.log(err);
+      req.flash('error', 'Please contact admin for more information about the error');
+      res.redirect('back');
+    }
+    var commentIdx = foundUser.commentByUser.indexOf(req.params.comment_id);
+    foundUser.commentByUser.splice(commentIdx, 1);
+    foundUser.save(function(err, updatedUser){
+      if (err) {
+        console.log(err);
+        req.flash('error', 'Please contact admin for more information about the error');
+        res.redirect('back');
+      }
+    });
+  });
   // remove comment
   Comment.findByIdAndRemove(req.params.comment_id, function(err, removedComment){
     if (err) {

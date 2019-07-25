@@ -63,12 +63,27 @@ router.post('/', middleware.isLoggedIn, function (req, res) {
         req.flash('error', 'Please contact admin for more information about the error');
         res.redirect('back');
       }
-      console.log(' mongoose.create successfully, redirect to app.get(/campgrounds)');
-      req.flash('success', 'Your campground has been successfully created!')
-      res.redirect('/campgrounds');
+      // add campground to user
+      User.findById({_id: req.user._id}, function(err, foundUser){
+        if (err) {
+          console.log(err);
+          req.flash('error', 'Please contact admin for more information about the error');
+          res.redirect('back');
+        }
+        foundUser.campByUser.push(newCamp);
+        foundUser.save(function(err, updatedUser){
+          if (err) {
+            console.log(err);
+            req.flash('error', 'Please contact admin for more information about the error');
+            res.redirect('back');
+          }
+          console.log(' mongoose.create successfully, redirect to app.get(/campgrounds)');
+          req.flash('success', 'Your campground has been successfully created!')
+          res.redirect('/campgrounds');
+        });        
+      });      
     });
   })
-
 })
 
 // SHOW	route (/campgrounds/:id	GET)
@@ -104,7 +119,7 @@ router.get('/:id/edit', middleware.checkCampgroundOwner, function (req, res) {
       camp: foundCampground
     });
   });
-})
+});
 
 // UPDATE route
 router.put('/:id', middleware.checkCampgroundOwner, function (req, res) {
@@ -119,12 +134,14 @@ router.put('/:id', middleware.checkCampgroundOwner, function (req, res) {
     // redirect
     req.flash('success', 'Your Campground Has Been Updated!');
     res.redirect('/campgrounds/' + req.params.id);
-  })
-})
+  });
+});
 
 // DESTROY route
 router.delete('/:id', middleware.checkCampgroundOwner, function (req, res) {
   console.log('Route app.delete(/campgrounds/:id)');
+
+  // remove campground from campground db
   Campground.findByIdAndRemove(req.params.id, function (err, removedCamp) {
     if (err) {
       console.log(' cannot find and remove camp');
@@ -142,11 +159,36 @@ router.delete('/:id', middleware.checkCampgroundOwner, function (req, res) {
         req.flash('error', 'Please contact admin for more information about the error');
         res.redirect('back');
       }
-      // redirect
-      req.flash('success', 'Your Campground Has Been Deleted!');
-      res.redirect('/campgrounds');
     });
-  })
-})
+    // remove campByUser and commentByUser from user db 
+    User.findById({_id: req.user._id},function(err, foundUser){    
+      if (err) {
+        console.log(err);
+        req.flash('error', 'Please contact admin for more information about the error');
+        res.redirect('back');
+      }
+      var campIdx = foundUser.campByUser.indexOf(req.params.id);
+      foundUser.campByUser.splice(campIdx, 1);
+      // remove commentByUser from user db
+      for (i=0; i<removedCamp.comments.length; i++) {
+        var commentIdx = foundUser.commentByUser.indexOf(removedCamp.comments[i]);
+        if (commentIdx != -1) {
+          foundUser.commentByUser.splice(commentIdx, 1);
+        }
+      }
+      foundUser.save(function(err, updateUser){
+        if (err) {
+          console.log(err);
+          req.flash('error', 'Please contact admin for more information about the error');
+          res.redirect('back');
+        }        
+      });
+    });
+        
+    // redirect
+    req.flash('success', 'Your Campground Has Been Deleted!');
+    res.redirect('/campgrounds');
+  });
+});
 
 module.exports = router;
