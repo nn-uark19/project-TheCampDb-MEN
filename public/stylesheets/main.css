@@ -62,12 +62,17 @@ body {
 }
 
 .userImage {
+  margin: 40px auto;
+}
+
+.userImage img{
   margin-top: 5%;
-  position: absolute;
+  /* position: absolute; */
   height: 200px;
   width: 200px;
   border-radius: 50%;
   background-position: 50% 50% center center;
   background-repeat: no-repeat;
   object-fit: cover;
+  margin: 0 0;
 }
