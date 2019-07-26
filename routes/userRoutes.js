@@ -15,20 +15,39 @@ router.get('/register', function(req, res){
 // CREATE route
 router.post('/register', function(req, res){
   console.log('Route app.post(/register)');
-  const newUser = new User({username: req.body.username});
+  // const newUser = new User({
+  //   username: req.body.username,
+  //   firstName: req.body.firstname,
+  //   lastName: req.body.lastname,
+  //   email: req.body.email,
+  //   avatar: req.body.avatar
+  // });
+  var newUser = new User(req.body.newUser);
+  
   if (req.body.adminCheck === ADMIN_CODE) {
     newUser.isAdmin = true;
   }
+  // eval(require('locus'));
   User.register(newUser, req.body.password, function(err, newUser){
     if (err) {
       console.log('Cannot create new User');
       req.flash('error', err.message);
       return res.redirect('/register');
     }
-    passport.authenticate('local')(req, res, function(){
+    req.login(newUser, function(err){
+      if (err) {
+        console.log('Cannot create new User');
+        req.flash('error', err.message);
+        return res.redirect('back');
+      }
+      console.log('good');
       req.flash('success', 'Your Account Has Been Created! Welcome to YelpCamp '+ newUser.username);
       res.redirect('/campgrounds');
     });
+    // passport.authenticate('local')(req, res, function(){
+    //   req.flash('success', 'Your Account Has Been Created! Welcome to YelpCamp '+ newUser.username);
+    //   res.redirect('/campgrounds');
+    // });
   });
 });
 

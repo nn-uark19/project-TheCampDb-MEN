@@ -3,6 +3,7 @@
 # System files
 .env
 .DS_Store
+.vscode
 
 # Development files
 /node_modules
