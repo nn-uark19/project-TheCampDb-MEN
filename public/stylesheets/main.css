@@ -52,3 +52,27 @@ body {
 .campIntroText {
   height: 38px;
 }
+
+/* ========================================== */
+/* user profile  */ 
+.userName {
+  background-color: #29303b;
+  color: white;
+  padding: 20px 10%;
+}
+
+.userImage {
+  margin: 40px auto;
+}
+
+.userImage img{
+  margin-top: 5%;
+  /* position: absolute; */
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-position: 50% 50% center center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  margin: 0 0;
+}

@@ -1,16 +1,18 @@
-<% include ../partials/header.ejs%>
+<% include ../partials/header%>
 
-<!-- main content -->
-<!-- big jumbotron -->
-<div class="jumbotron">
-  <h1>Welcome To YelpCamp!</h1>
-  <p>View our hand-picked campgrounds from all over the world</p>
-  <p><a class="btn btn-primary btn-lg" href="/campgrounds/new"">Add New Campgrounds</a></p>
+<div class='userName'>
+  <h1><%=user.firstname%> <%=user.lastname%></h1>
 </div>
+<div class='row text-center userImage'>
+    <img src="<%=user.avatar || 'https://taskletfactory.com/wp-content/uploads/2018/01/User-Friendly-Icon-web.png'%>" alt="profile image" >
+</div>
+<hr>
 
 <!-- show all campgrounds -->
+<h3 class='text-center'>Camp Created<h4>
+<br />
 <div class="row text-center">
-  <% campgrounds.forEach(function(camp) { %>
+  <% camps.forEach(function(camp) { %>
     <div class="col-md-3 col-sm-6">
       <div class="thumbnail campIntro">
         <img src='<%= camp.image %>'>
@@ -23,4 +25,4 @@
   <%})%>
 </div>
 
-<% include ../partials/footer.ejs%>
+<% include ../partials/footer%>
