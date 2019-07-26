@@ -15,22 +15,32 @@ router.get('/register', function(req, res){
 // CREATE route
 router.post('/register', function(req, res){
   console.log('Route app.post(/register)');
-  const newUser = new User({username: req.body.username});
-  if (req.body.adminCheck === ADMIN_CODE) {
-    newUser.isAdmin = true;
-  }
-  User.register(newUser, req.body.password, function(err, newUser){
+  // const newUser = new User(req.body.newUser);
+  const newUser = new User({
+    username: req.body.newUser.username,
+    // firstName: req.body.newUser.firstName,
+    // lastName: req.body.newUser.lastName,
+    // email: req.body.newUser.email,
+    // avatar: req.body.newUser.avatar
+  });
+  // eval(require('locus'));
+  // if (req.body.adminCheck === ADMIN_CODE) {
+  //   newUser.isAdmin = true;
+  // }
+  User.register(newUser, req.body.password, function(err, newUser){    
     if (err) {
       console.log('Cannot create new User');
       req.flash('error', err.message);
-      return res.redirect('/register');
+      res.redirect('/register');
     }
     passport.authenticate('local')(req, res, function(){
       req.flash('success', 'Your Account Has Been Created! Welcome to YelpCamp '+ newUser.username);
+      
       res.redirect('/campgrounds');
     });
   });
 });
+
 
 // login route- show
 router.get('/login', function(req, res){

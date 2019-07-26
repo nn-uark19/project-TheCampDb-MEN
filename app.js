@@ -87,3 +87,20 @@ const userRoutes = require('./routes/userRoutes');
 app.use(userRoutes);
 
 // routes in test
+app.get('/users/:id', function(req, res){
+  User.findById({_id: req.params.id}, function(err, foundUser){
+    if (err) {
+      console.log(err);
+      req.flash('error', 'Please contact admin for more information about the error');
+      res.redirect('back');
+    } 
+    Campground.find().where('author.id').equals(foundUser._id).exec(function(err, matchCamps){
+      if (err) {
+        console.log(err);
+        req.flash('error', 'Please contact admin for more information about the error');
+        res.redirect('back');
+      }
+      res.render('./profile/route_show', {user: foundUser, page: 'user', camps: matchCamps});
+    });
+  });  
+});

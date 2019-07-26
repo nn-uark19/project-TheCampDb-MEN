@@ -89,7 +89,7 @@ router.get('/:id', function (req, res) {
         camp: foundCamp
       });
     });
-});
+})
 
 // EDIT route
 router.get('/:id/edit', middleware.checkCampgroundOwner, function (req, res) {
