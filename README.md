@@ -12,6 +12,9 @@ Notice:
 - notice the EDIT/UPDATE route (name in form needs to match the schema of the mongoose db that needs to be updated)
 ---------------------------------------------
 TECHNOLOGY
+	* user profile page (1-name, 2-avatar or template photo, 3-content created by user)
+	* admin account creatiion using secretCode checking when creating account, admin privilege
+	* creation time using moment js
 	* google maps API (maps js API + geocoder API)
 	* css advance (background slider, ultimate footer)
 	* flash message (connect-flash) using express-session, flash message for authentication
@@ -23,6 +26,9 @@ TECHNOLOGY
 	* html, css (bootstrap)
 ---------------
 DEVELOPMENT
+	* user profile page (1-name, 2-avatar or template photo, 3-content created by user) (v18)
+	* admin account creatiion using secretCode checking when creating account, admin privilege (v17)
+	* creation time using moment js (v16)
 	* google maps API (maps js API + geocoder API) (v15) 
 	* style login/register using bootstrap, flash message for login authentication (v14)
 	* css ultimate footer, add db camprgound price property (v13)
@@ -38,37 +44,50 @@ DEVELOPMENT
 	* refactor db (mongoose), seed file seeds.js, comment schema (v3)
 	* campground RESTful routes(NEW, CREATE, SHOW), mongoose (schema, connect mongodb) (v2)
 	* bootstrap, nodejs, expressjs routes, ejs, RESTful INDEX (v1)
+---------------------------------------------
+version 18
+- branch: master (merge from v18userProfile)
+- new development: add user profile page. Each profile page has 1-name, 2-avatar or template photo, 3-campgrounds created by user
+- 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
+---------------
+User profile
+- add avatar, first name, last name, email to /models/campground.js
+- modify register form to have the new attributes in /views/profile/register.ejs 
+- modify the route NEW/CREATE user in /routes/userRoutes.js
+- create new route router.get(/users/:id)…/views/profile/route_show.ejs
+- modify to add <a> to user in /views/campgrounds/route_show.ejs and the header too
 
 
 ---------------------------------------------
-version 15
-- branch: master (merge from ...)
-- new development: google maps API (maps js API + geocoder API)
+version 17
+- branch: master (merge from v17admin)
+- new development: admin account creatiion using secretCode checking when creating account, admin privilege
 - 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
 ---------------
-Resources
-- https://www.youtube.com/watch?v=B4OuCjQLJ9k
-- https://webdev.slides.com/nax3t/yelpcamp-refactor-google-maps#/
-- https://github.com/nax3t/google-maps-api
+Add admin privilege and functions to admin	Add admin privilege 
+- Modify db to add admin property {isAdmin: {type: Boolean, default: false} }
+- Modify creation form to add admin secret code {/views/profile/route_register.ejs}  
+- Modify route file to process the new input {routes/userRoutes.ejs}
 
-Geocoding API/ Google Maps API (https://developers.google.com/maps/documentation/geocoding/get-api-key)
-- Create a new project
-- Get Google Maps API Key {like credentials, key1Public}
-- Restrict Google Maps API Key {can add both local and heroku to key1}
-- Enable Geocoding API
-- Get another key for Geocoding API {key2Secret no restrictions}
- + install package dotenv. Add the GEOCODER_API_KEY=<key2Secret> to .env file
- + protect the key2Secret from github by updating .gitignore file
- + Add to application as ENV variable {GEOCODER_API_KEY=<key2Secret>}
- + set env for heroku {heroku config:set GEOCODER_API_KEY=<key2Secret>}
-- Add Google Maps scripts to your application {/views/campgrounds/route_show.ejs, edit to use key1Public}
-- Display the campground location in show.ejs {css /public/stylesheets/main.css}
-- Update campground model {add location:String, lat:Number, and lng:Number}
-- Update new and edit forms, add location input field {/views/campgrounds/route_new.ejs and route_edit.ejs}
-- Update campground routes
- + install package node-geocoder. include the mandatory package include to code /routes/campgrounds.js
- + modify campground create route (post), update route (put route)
-- Remove localhost from restriction. Key1public is in /views/campgrounds/route_show.ejs, people can see and use it
+Make edit/delete campground activated for admin
+- Modify to activate button in view {/views/campgrounds/route_show.ejs }
+- Modify middleware so admin can access the edit/update/delete routes
+
+Make edit/delete comment activated for admin
+- similar to above
+
+
+---------------------------------------------
+version 16
+- branch: master (merge from v16createTime)
+- new development: creation time for campground/ comment using moment js
+- 4 terminals: mongod, nodemon, mongo for debug database, and 1 free terminal
+---------------
+Show creation time 
+- Install package moment
+- include package in app.js (above passport config code)
+- Update Campground and Comment Models {add createdAt}
+- Use Moment in Your show.ejs File {for campground, and comment}
 
 
 ---------------------------------------------
