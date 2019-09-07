@@ -1,0 +1,9 @@
+0000000000000000000000000000000000000000 598497ec045b50d13b876d7ac9093a4ada645c66 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562727981 -0500	branch: Created from HEAD
+598497ec045b50d13b876d7ac9093a4ada645c66 35b1d37d07a688c75a37f4d8e7034764354d87f9 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562732781 -0500	commit: update function to edit campgrounds
+35b1d37d07a688c75a37f4d8e7034764354d87f9 0fac95ade23f6e8897b87daf3912ba17bbb665eb Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562768245 -0500	commit: add function/button to delete campground
+0fac95ade23f6e8897b87daf3912ba17bbb665eb a5bb8fbb08a48806b26e8e7b85d3b4723962b1ea Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562773277 -0500	commit: move campground update/remove routes to seperate file
+a5bb8fbb08a48806b26e8e7b85d3b4723962b1ea 6e358ac8059c5fac3dc25853d3f15591d9cdcc14 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562775037 -0500	commit: add function to authorize users/owners before edit/remove campgrounds
+6e358ac8059c5fac3dc25853d3f15591d9cdcc14 11cf94ae2b575d65dabf21c76388b26420e323e6 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562816617 -0500	commit: add function to edit comment, still strugle on the position of the Edit button
+11cf94ae2b575d65dabf21c76388b26420e323e6 56d69cb9cc574c84cd622c31988865af389df17a Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562854305 -0500	merge master: Fast-forward
+56d69cb9cc574c84cd622c31988865af389df17a 81773aa70d925c9dbb115e300108773f027669e6 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562855545 -0500	commit: function delete comment works, need to refactor routes, authorization
+81773aa70d925c9dbb115e300108773f027669e6 efa2a29ada7c720b2b038f503ecfe3c05f12d4ce Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562860782 -0500	commit: add function to edit/delete comments with authorizations

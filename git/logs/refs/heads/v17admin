@@ -1,0 +1,2 @@
+0000000000000000000000000000000000000000 8486e948f836f9bca651868cec3659e84fa1df09 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563296870 -0500	branch: Created from HEAD
+8486e948f836f9bca651868cec3659e84fa1df09 523ec6dd386a055aec0ab2e649fe00fcefb23176 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563303607 -0500	commit: add function to have admin privilege when creating account, edit/delete activated for admin

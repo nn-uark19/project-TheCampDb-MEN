@@ -1,0 +1,52 @@
+0000000000000000000000000000000000000000 59d2a06160d1d944b13a53f15afc460f618b99ce Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561941462 -0500	branch: Created from origin/master
+59d2a06160d1d944b13a53f15afc460f618b99ce 71e613c11c4c96003df4b45402a1773ffcdd1a96 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561941968 -0500	commit: version file
+71e613c11c4c96003df4b45402a1773ffcdd1a96 d6e0ec7cb0b2872bcc9f1c5d52ce109b75df7121 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561942309 -0500	commit: update version file
+d6e0ec7cb0b2872bcc9f1c5d52ce109b75df7121 51981c05a8ac484d5a721b027a8d40067c6955a6 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561994787 -0500	commit: description
+51981c05a8ac484d5a721b027a8d40067c6955a6 250facd1705e03bc1079822d985216ee307102e7 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561995456 -0500	commit: readme same as branch_description
+250facd1705e03bc1079822d985216ee307102e7 c3d552ff5410648aa12a79bf939356de25a19bf8 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562009627 -0500	commit (merge): resolve conflict v2mongoose and master
+c3d552ff5410648aa12a79bf939356de25a19bf8 78d541dc023a6b92e71f77b45039064b9395d840 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562209817 -0500	commit (merge): merge v3seeds into master
+78d541dc023a6b92e71f77b45039064b9395d840 c2212c1b14ac32f04c7e8cde6c1a6029f6bc0367 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562210276 -0500	commit: note fast forward issue
+c2212c1b14ac32f04c7e8cde6c1a6029f6bc0367 8baf3efc44d94f08bfde541c0b794d5a7941558e Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562343923 -0500	merge v4comments: Fast-forward
+8baf3efc44d94f08bfde541c0b794d5a7941558e 2538e61902ce24f58b00d6ca84c8f98f74990d4f Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562344514 -0500	commit: update description
+2538e61902ce24f58b00d6ca84c8f98f74990d4f 83c1fa3d5a558b7e3613c894bde175925fca6da4 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562344974 -0500	commit (merge): test git hub
+83c1fa3d5a558b7e3613c894bde175925fca6da4 080c26dbe32d7b1d29ca68371eed376ac8d29845 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562362891 -0500	commit: note the fast forward. finished v4, adding comments
+080c26dbe32d7b1d29ca68371eed376ac8d29845 ad5816da5fb1c98211dd981b67b07f7c03ff26cc Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562363096 -0500	commit: update branch name
+ad5816da5fb1c98211dd981b67b07f7c03ff26cc c1d9b93923dabac10b91c481da21cc34582dc974 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562508476 -0500	commit: this commit prevents fast forward
+c1d9b93923dabac10b91c481da21cc34582dc974 4afe724717c445268b9a3536a76cabe14004eaca Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562508931 -0500	commit (merge): merge v5styleShowPage into master
+4afe724717c445268b9a3536a76cabe14004eaca 5a4af912a009d72a39f9b604fb9985b56531c023 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562603673 -0500	commit (merge): expect a fast forward case
+5a4af912a009d72a39f9b604fb9985b56531c023 6991deb15ec2ca66f9d674d29acff41df67d0961 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562608784 -0500	merge v6auth: Merge made by the 'recursive' strategy.
+6991deb15ec2ca66f9d674d29acff41df67d0961 78492eaac24f9f0afc70e48fe3bf1173cae77489 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562645930 -0500	commit (merge): finish v7, merge from v7 refactor routes
+78492eaac24f9f0afc70e48fe3bf1173cae77489 dc52b85ab6ad669a07940b53ea7ca0316011d018 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562709282 -0500	merge v8commentUser: Fast-forward
+dc52b85ab6ad669a07940b53ea7ca0316011d018 bb1db3b0405eb92dd01e4629b4b56e51856e19dd Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562709503 -0500	commit: finish v8commentUser, save author"s name to a comment automactically
+bb1db3b0405eb92dd01e4629b4b56e51856e19dd 8394716579c0522314711f4a2dffed10f2ac4933 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562716898 -0500	commit (merge): merge from v9campgroundUser, save author"s name to campgrounds automactically
+8394716579c0522314711f4a2dffed10f2ac4933 d2536ef36d7401af3374c003b3d96791486b93ec Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562816976 -0500	commit (merge): function to edit/remove campgrounds with authorization, still working on comments
+d2536ef36d7401af3374c003b3d96791486b93ec e7114cca3c73d84c2ac158de02826b996ba82806 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562853975 -0500	commit: fixed Edit comment button
+e7114cca3c73d84c2ac158de02826b996ba82806 56d69cb9cc574c84cd622c31988865af389df17a Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562854167 -0500	commit: update notice section in README
+56d69cb9cc574c84cd622c31988865af389df17a efa2a29ada7c720b2b038f503ecfe3c05f12d4ce Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562860806 -0500	merge v10updateDestroy: Fast-forward
+efa2a29ada7c720b2b038f503ecfe3c05f12d4ce 24c1503189db0031d88c5f5c44c38e5dbda674bc Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562861092 -0500	commit: minor change to README
+24c1503189db0031d88c5f5c44c38e5dbda674bc 817711209da0a9c7198c273c40a7dc73dac33576 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562880114 -0500	commit: prepare to deploy to heroku
+817711209da0a9c7198c273c40a7dc73dac33576 8e62a4448b5f1f4d33715c46e352a736d424823e Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562947461 -0500	commit: waiting for heroku enabled
+8e62a4448b5f1f4d33715c46e352a736d424823e bf8163635a532714ceae9e37da14d3f3818180a5 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562947489 -0500	merge herokuDeploy: Merge made by the 'recursive' strategy.
+bf8163635a532714ceae9e37da14d3f3818180a5 de7d5a2b983b65c23f284d12e21fd96d78d986ff Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562970659 -0500	commit: waiting for refactor middleware, flash feature
+de7d5a2b983b65c23f284d12e21fd96d78d986ff 5060a8b5102cf2467a2eb2c43912e40704e635f9 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562970706 -0500	merge v11flaskUi: Merge made by the 'recursive' strategy.
+5060a8b5102cf2467a2eb2c43912e40704e635f9 218b163b1b7e47488edaa73d58ca3416cb3e2c16 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562970974 -0500	commit: update READ to show the refactor middleware, flash messages
+218b163b1b7e47488edaa73d58ca3416cb3e2c16 c50841f02fc8bf5a4b9463fe533f757f6297fbc5 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563076157 -0500	commit: summarize all techniques used
+c50841f02fc8bf5a4b9463fe533f757f6297fbc5 67f75e6fd97601d27a8e758e4a7b83385a65a2d0 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563082955 -0500	merge v12backgroundSlider: Fast-forward
+67f75e6fd97601d27a8e758e4a7b83385a65a2d0 c0af849116e7235bea630ce4020c82c5fac1073c Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563083287 -0500	commit: update README
+c0af849116e7235bea630ce4020c82c5fac1073c e26d48cb21a06b7a73782a073dc283e864a2b4c9 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563144113 -0500	merge herokuDeploy: Fast-forward
+e26d48cb21a06b7a73782a073dc283e864a2b4c9 d9a9d5c62380aed85eb749b5800c9da947b0fe3c Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563146585 -0500	commit: waiting for v13campgroundPrice
+d9a9d5c62380aed85eb749b5800c9da947b0fe3c ea9aaf9150dc434e96c0ee5d431079b23736e8e7 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563146597 -0500	merge v13campgroundPrice: Merge made by the 'recursive' strategy.
+ea9aaf9150dc434e96c0ee5d431079b23736e8e7 3cad5ad989cc4b49527b83168974eb31602b1fb5 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563147244 -0500	commit: waiting for v14
+3cad5ad989cc4b49527b83168974eb31602b1fb5 6e4cf3acbbf70f4384bdb2543ee60774b7b4b1ba Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563151664 -0500	merge v14uiImprovement: Fast-forward
+6e4cf3acbbf70f4384bdb2543ee60774b7b4b1ba cc640cd0da3528e2006881c7c9399892a3e8566b Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563152010 -0500	commit: update README for v14
+cc640cd0da3528e2006881c7c9399892a3e8566b 859a649421afaf2d685311ffc85daf6815a10ddd Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563214479 -0500	commit: waiting for v15googleApi
+859a649421afaf2d685311ffc85daf6815a10ddd 06ccb10ef8a4c5fe957afe5c5ad38d0c2dbcb166 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563226210 -0500	merge v15googleApi: Fast-forward
+06ccb10ef8a4c5fe957afe5c5ad38d0c2dbcb166 0694d72071ac2aa436b53d2ee67bacc217b15b30 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563291476 -0500	commit: modify READ, minor CSS change for INDEX page, ready for heroku push
+0694d72071ac2aa436b53d2ee67bacc217b15b30 2d0e97604796226f326464c66d75c73a59738a3a Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563296710 -0500	merge v16createTime: Fast-forward
+2d0e97604796226f326464c66d75c73a59738a3a 8486e948f836f9bca651868cec3659e84fa1df09 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563296844 -0500	commit: modify README, add feature to show creation time for campground/comment
+8486e948f836f9bca651868cec3659e84fa1df09 523ec6dd386a055aec0ab2e649fe00fcefb23176 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563303640 -0500	merge v17admin: Fast-forward
+523ec6dd386a055aec0ab2e649fe00fcefb23176 bd5bd0dba2c89206451b38e759e7cd90cd0ed796 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563711969 -0500	commit: test the status of project
+bd5bd0dba2c89206451b38e759e7cd90cd0ed796 3841c4d050105705a4e230571d2fd200238845ad Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563919205 -0500	commit: add meta tag for mobile responsive, fix the index page for mobile, refactor routes for error checking
+3841c4d050105705a4e230571d2fd200238845ad 58a201aed11fee74360bc048a7167254934f4b9b Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1564000176 -0500	merge herokuDeploy: Fast-forward
+58a201aed11fee74360bc048a7167254934f4b9b 0056631016119849179803a4260de85c10a4f564 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1564116184 -0500	commit: waiting for v18
+0056631016119849179803a4260de85c10a4f564 fab00e12e5215d27446362e594562924290cd677 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1564116195 -0500	merge v18userProfile: Merge made by the 'recursive' strategy.

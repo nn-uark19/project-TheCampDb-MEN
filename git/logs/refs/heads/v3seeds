@@ -1,0 +1,6 @@
+0000000000000000000000000000000000000000 213a61745f5b0f4ecadaff05d082006f653b0510 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562178474 -0500	branch: Created from HEAD
+213a61745f5b0f4ecadaff05d082006f653b0510 deb021f91b9cf6c075ddf8792647426aa84309da Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562179163 -0500	commit: mongoose module.export for Campground
+deb021f91b9cf6c075ddf8792647426aa84309da deb021f91b9cf6c075ddf8792647426aa84309da Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562185604 -0500	Branch: renamed refs/heads/v3comments to refs/heads/v3seeds
+deb021f91b9cf6c075ddf8792647426aa84309da caedfdd2154143c295a32499a9afe860667e7ffa Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562185855 -0500	commit: update description
+caedfdd2154143c295a32499a9afe860667e7ffa f0fc7bc0320734dceeaec26d48c4488292d15e95 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562190551 -0500	commit: mongoose exports campground-comment, seeds.js, populate, finish v3
+f0fc7bc0320734dceeaec26d48c4488292d15e95 7b8c4fe5721e33fdcb7f9e4e8694b9d76fe20e64 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562209087 -0500	commit: update description

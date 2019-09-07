@@ -1,0 +1,5 @@
+0000000000000000000000000000000000000000 bf8163635a532714ceae9e37da14d3f3818180a5 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562948880 -0500	branch: Created from HEAD
+bf8163635a532714ceae9e37da14d3f3818180a5 ef9de21b70c73b162dd5752d44d0ae5a06e2ac8c Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562949868 -0500	commit: refactor code, middleware functions moved to seperate file
+ef9de21b70c73b162dd5752d44d0ae5a06e2ac8c 4d911c87eca27cb28af25de6480dcded41d2877c Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562957478 -0500	commit: proof that js DOM can exist in ejs file
+4d911c87eca27cb28af25de6480dcded41d2877c 429a22b3debb38540188faea6b9ddf21303142c4 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562957890 -0500	commit: Revert "proof that js DOM can exist in ejs file"
+429a22b3debb38540188faea6b9ddf21303142c4 ad719aded40070023a89fbcf687ee84b86da2e03 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562970557 -0500	commit: add function to show flash messages (all routes updated)

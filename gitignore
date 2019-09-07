@@ -1,0 +1,10 @@
+# GitHub url: https://github.com/nnguyen-uark/project-yelpCamp
+
+# Secret files
+.env
+
+# System files
+.DS_Store
+
+# Development files
+/node_modules

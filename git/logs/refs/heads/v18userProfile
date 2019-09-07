@@ -1,0 +1,3 @@
+0000000000000000000000000000000000000000 58a201aed11fee74360bc048a7167254934f4b9b Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1564089248 -0500	branch: Created from HEAD
+58a201aed11fee74360bc048a7167254934f4b9b e7713405b3d9d0a0ae3e18fbf270336d4af2bfdb Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1564107397 -0500	commit: error when register users
+e7713405b3d9d0a0ae3e18fbf270336d4af2bfdb 7d866279c0a0074f70fd02bbca2398e0640ef887 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1564115550 -0500	commit: add user profile. Each profile page has 1-name, 2-avatar or template photo, 3-campgrounds created

@@ -1,0 +1,28 @@
+<% include ../partials/header%>
+
+<div class='userName'>
+  <h1><%=user.firstname%> <%=user.lastname%></h1>
+</div>
+<div class='row text-center userImage'>
+    <img src="<%=user.avatar || 'https://taskletfactory.com/wp-content/uploads/2018/01/User-Friendly-Icon-web.png'%>" alt="profile image" >
+</div>
+<hr>
+
+<!-- show all campgrounds -->
+<h3 class='text-center'>Camp Created<h4>
+<br />
+<div class="row text-center">
+  <% camps.forEach(function(camp) { %>
+    <div class="col-md-3 col-sm-6">
+      <div class="thumbnail campIntro">
+        <img src='<%= camp.image %>'>
+        <div class="caption">
+          <h4 class="campIntroText"><%= camp.name %></h4>
+          <a href='/campgrounds/<%=camp._id%>' type="button" class="btn btn-primary">More Info</a>
+        </div>  
+      </div> 
+    </div> 
+  <%})%>
+</div>
+
+<% include ../partials/footer%>

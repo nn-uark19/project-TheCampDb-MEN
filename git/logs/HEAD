@@ -1,0 +1,260 @@
+0000000000000000000000000000000000000000 d51f5898cb5ed826a5e2970f1cc93ce0cc5d3b9b Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561826411 -0500	commit (initial): first commit
+d51f5898cb5ed826a5e2970f1cc93ce0cc5d3b9b 5a36c3243050e96136b74c5b194a92f1d1d5b80f Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561828103 -0500	commit: Initial Routes
+5a36c3243050e96136b74c5b194a92f1d1d5b80f e86f2cadc8c7b01ec779dc832925db2c452a2ba6 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561837131 -0500	commit: finish part 1- landing, addCamp, campgrounds, header/footer
+e86f2cadc8c7b01ec779dc832925db2c452a2ba6 59d2a06160d1d944b13a53f15afc460f618b99ce Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561837458 -0500	commit: fix anchor tag
+59d2a06160d1d944b13a53f15afc460f618b99ce 59d2a06160d1d944b13a53f15afc460f618b99ce Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561902010 -0500	checkout: moving from master to help
+59d2a06160d1d944b13a53f15afc460f618b99ce 59d2a06160d1d944b13a53f15afc460f618b99ce Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561902025 -0500	checkout: moving from help to master
+59d2a06160d1d944b13a53f15afc460f618b99ce 59d2a06160d1d944b13a53f15afc460f618b99ce Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561941369 -0500	checkout: moving from master to help
+59d2a06160d1d944b13a53f15afc460f618b99ce 59d2a06160d1d944b13a53f15afc460f618b99ce Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561941478 -0500	checkout: moving from help to master
+59d2a06160d1d944b13a53f15afc460f618b99ce 59d2a06160d1d944b13a53f15afc460f618b99ce Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561941529 -0500	checkout: moving from master to v2Mongoose
+59d2a06160d1d944b13a53f15afc460f618b99ce 59d2a06160d1d944b13a53f15afc460f618b99ce Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561941544 -0500	checkout: moving from v2Mongoose to master
+59d2a06160d1d944b13a53f15afc460f618b99ce 59d2a06160d1d944b13a53f15afc460f618b99ce Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561941591 -0500	checkout: moving from master to v2Mongoose
+59d2a06160d1d944b13a53f15afc460f618b99ce 59d2a06160d1d944b13a53f15afc460f618b99ce Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561941636 -0500	checkout: moving from v2Mongoose to master
+59d2a06160d1d944b13a53f15afc460f618b99ce 59d2a06160d1d944b13a53f15afc460f618b99ce Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561941651 -0500	checkout: moving from master to v2Mongoose
+59d2a06160d1d944b13a53f15afc460f618b99ce 59d2a06160d1d944b13a53f15afc460f618b99ce Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561941742 -0500	checkout: moving from v2Mongoose to master
+59d2a06160d1d944b13a53f15afc460f618b99ce 59d2a06160d1d944b13a53f15afc460f618b99ce Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561941759 -0500	checkout: moving from master to v2Mongoose
+59d2a06160d1d944b13a53f15afc460f618b99ce 7ed1528f5cf0d7685ea619f2490a9f5467df22ec Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561941850 -0500	commit: new branch v2Mongoose
+7ed1528f5cf0d7685ea619f2490a9f5467df22ec 59d2a06160d1d944b13a53f15afc460f618b99ce Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561941877 -0500	checkout: moving from v2Mongoose to master
+59d2a06160d1d944b13a53f15afc460f618b99ce 7ed1528f5cf0d7685ea619f2490a9f5467df22ec Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561941889 -0500	checkout: moving from master to v2Mongoose
+7ed1528f5cf0d7685ea619f2490a9f5467df22ec 59d2a06160d1d944b13a53f15afc460f618b99ce Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561941920 -0500	checkout: moving from v2Mongoose to master
+59d2a06160d1d944b13a53f15afc460f618b99ce 71e613c11c4c96003df4b45402a1773ffcdd1a96 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561941968 -0500	commit: version file
+71e613c11c4c96003df4b45402a1773ffcdd1a96 71e613c11c4c96003df4b45402a1773ffcdd1a96 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561941997 -0500	checkout: moving from master to v2mongoose
+71e613c11c4c96003df4b45402a1773ffcdd1a96 7eafb817f0a0b08c102d448d2c5ebbaa9f3fd73a Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561942037 -0500	commit: control 2 file
+7eafb817f0a0b08c102d448d2c5ebbaa9f3fd73a 71e613c11c4c96003df4b45402a1773ffcdd1a96 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561942247 -0500	checkout: moving from v2mongoose to master
+71e613c11c4c96003df4b45402a1773ffcdd1a96 d6e0ec7cb0b2872bcc9f1c5d52ce109b75df7121 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561942309 -0500	commit: update version file
+d6e0ec7cb0b2872bcc9f1c5d52ce109b75df7121 7eafb817f0a0b08c102d448d2c5ebbaa9f3fd73a Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561994351 -0500	checkout: moving from master to v2mongoose
+7eafb817f0a0b08c102d448d2c5ebbaa9f3fd73a d6e0ec7cb0b2872bcc9f1c5d52ce109b75df7121 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561994554 -0500	checkout: moving from v2mongoose to master
+d6e0ec7cb0b2872bcc9f1c5d52ce109b75df7121 51981c05a8ac484d5a721b027a8d40067c6955a6 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561994787 -0500	commit: description
+51981c05a8ac484d5a721b027a8d40067c6955a6 7eafb817f0a0b08c102d448d2c5ebbaa9f3fd73a Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561994861 -0500	checkout: moving from master to v2mongoose
+7eafb817f0a0b08c102d448d2c5ebbaa9f3fd73a 51981c05a8ac484d5a721b027a8d40067c6955a6 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561994890 -0500	checkout: moving from v2mongoose to master
+51981c05a8ac484d5a721b027a8d40067c6955a6 7eafb817f0a0b08c102d448d2c5ebbaa9f3fd73a Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561994902 -0500	checkout: moving from master to v2mongoose
+7eafb817f0a0b08c102d448d2c5ebbaa9f3fd73a 30aec802486eb715794342164319a0daea7ac5df Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561994996 -0500	commit: branch description in README
+30aec802486eb715794342164319a0daea7ac5df 291891a52ba227fa1db3391b732a4bfd7f9b8d57 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561995308 -0500	commit: description
+291891a52ba227fa1db3391b732a4bfd7f9b8d57 007eef3cd1cdf380cbdf060193aca80d86a60fac Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561995323 -0500	commit: description
+007eef3cd1cdf380cbdf060193aca80d86a60fac 51981c05a8ac484d5a721b027a8d40067c6955a6 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561995422 -0500	checkout: moving from v2mongoose to master
+51981c05a8ac484d5a721b027a8d40067c6955a6 250facd1705e03bc1079822d985216ee307102e7 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561995456 -0500	commit: readme same as branch_description
+250facd1705e03bc1079822d985216ee307102e7 007eef3cd1cdf380cbdf060193aca80d86a60fac Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561995465 -0500	checkout: moving from master to v2mongoose
+007eef3cd1cdf380cbdf060193aca80d86a60fac 250facd1705e03bc1079822d985216ee307102e7 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561995477 -0500	checkout: moving from v2mongoose to master
+250facd1705e03bc1079822d985216ee307102e7 007eef3cd1cdf380cbdf060193aca80d86a60fac Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1561995480 -0500	checkout: moving from master to v2mongoose
+007eef3cd1cdf380cbdf060193aca80d86a60fac 221f6da96b4d4fe614c034ddb98fad5eaafc0992 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562007477 -0500	commit: add mongoose
+221f6da96b4d4fe614c034ddb98fad5eaafc0992 a2fc6691885be07f568240bf33361061e6dcc1e3 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562007497 -0500	commit: mongoose npm
+a2fc6691885be07f568240bf33361061e6dcc1e3 c8400db09de1b731edc6f2864749d7a92490c248 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562007877 -0500	commit: update form
+c8400db09de1b731edc6f2864749d7a92490c248 466966d9ce16b7a91375d189422b33cc49e1f1a8 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562008610 -0500	commit: indent correction, file name change, finish v2
+466966d9ce16b7a91375d189422b33cc49e1f1a8 e049ace7907e3dbe413627c0d83742e590963ab5 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562008632 -0500	commit: indent correction, file name change, finish v2
+e049ace7907e3dbe413627c0d83742e590963ab5 250facd1705e03bc1079822d985216ee307102e7 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562008679 -0500	checkout: moving from v2mongoose to master
+250facd1705e03bc1079822d985216ee307102e7 250facd1705e03bc1079822d985216ee307102e7 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562008698 -0500	checkout: moving from master to master-backup1
+250facd1705e03bc1079822d985216ee307102e7 250facd1705e03bc1079822d985216ee307102e7 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562008713 -0500	checkout: moving from master-backup1 to master
+250facd1705e03bc1079822d985216ee307102e7 c3d552ff5410648aa12a79bf939356de25a19bf8 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562009627 -0500	commit (merge): resolve conflict v2mongoose and master
+c3d552ff5410648aa12a79bf939356de25a19bf8 250facd1705e03bc1079822d985216ee307102e7 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562069640 -0500	checkout: moving from master to master-backup1
+250facd1705e03bc1079822d985216ee307102e7 7e89092847539cc885ca466bc407a51412f6c8be Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562069699 -0500	commit: branch: master-backup1. before having mongoose
+7e89092847539cc885ca466bc407a51412f6c8be e049ace7907e3dbe413627c0d83742e590963ab5 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562083038 -0500	checkout: moving from master-backup1 to v2mongoose
+e049ace7907e3dbe413627c0d83742e590963ab5 75fda689e28ef2653a596010168ea40eef02e207 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562083088 -0500	commit: add description
+75fda689e28ef2653a596010168ea40eef02e207 213a61745f5b0f4ecadaff05d082006f653b0510 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562099699 -0500	commit: update description
+213a61745f5b0f4ecadaff05d082006f653b0510 213a61745f5b0f4ecadaff05d082006f653b0510 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562178474 -0500	checkout: moving from v2mongoose to v3comments
+213a61745f5b0f4ecadaff05d082006f653b0510 deb021f91b9cf6c075ddf8792647426aa84309da Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562179163 -0500	commit: mongoose module.export for Campground
+deb021f91b9cf6c075ddf8792647426aa84309da 213a61745f5b0f4ecadaff05d082006f653b0510 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562179221 -0500	checkout: moving from v3comments to v2mongoose
+213a61745f5b0f4ecadaff05d082006f653b0510 cc31cd7259d6906cb15c5d52e90f1df5e7e932f1 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562179252 -0500	commit: update description
+cc31cd7259d6906cb15c5d52e90f1df5e7e932f1 deb021f91b9cf6c075ddf8792647426aa84309da Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562179288 -0500	checkout: moving from v2mongoose to v3comments
+deb021f91b9cf6c075ddf8792647426aa84309da 0000000000000000000000000000000000000000 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562185604 -0500	Branch: renamed refs/heads/v3comments to refs/heads/v3seeds
+0000000000000000000000000000000000000000 deb021f91b9cf6c075ddf8792647426aa84309da Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562185604 -0500	Branch: renamed refs/heads/v3comments to refs/heads/v3seeds
+deb021f91b9cf6c075ddf8792647426aa84309da caedfdd2154143c295a32499a9afe860667e7ffa Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562185855 -0500	commit: update description
+caedfdd2154143c295a32499a9afe860667e7ffa f0fc7bc0320734dceeaec26d48c4488292d15e95 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562190551 -0500	commit: mongoose exports campground-comment, seeds.js, populate, finish v3
+f0fc7bc0320734dceeaec26d48c4488292d15e95 c3d552ff5410648aa12a79bf939356de25a19bf8 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562208643 -0500	checkout: moving from v3seeds to master
+c3d552ff5410648aa12a79bf939356de25a19bf8 c3d552ff5410648aa12a79bf939356de25a19bf8 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562208804 -0500	checkout: moving from master to master-backup2
+c3d552ff5410648aa12a79bf939356de25a19bf8 c3d552ff5410648aa12a79bf939356de25a19bf8 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562208820 -0500	checkout: moving from master-backup2 to master
+c3d552ff5410648aa12a79bf939356de25a19bf8 c3d552ff5410648aa12a79bf939356de25a19bf8 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562208828 -0500	checkout: moving from master to master-backup2
+c3d552ff5410648aa12a79bf939356de25a19bf8 0176fc5ab9c32a77e9c2fec2e702842f4764df7a Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562208926 -0500	commit: description
+0176fc5ab9c32a77e9c2fec2e702842f4764df7a f0fc7bc0320734dceeaec26d48c4488292d15e95 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562208991 -0500	checkout: moving from master-backup2 to v3seeds
+f0fc7bc0320734dceeaec26d48c4488292d15e95 7b8c4fe5721e33fdcb7f9e4e8694b9d76fe20e64 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562209087 -0500	commit: update description
+7b8c4fe5721e33fdcb7f9e4e8694b9d76fe20e64 c3d552ff5410648aa12a79bf939356de25a19bf8 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562209096 -0500	checkout: moving from v3seeds to master
+c3d552ff5410648aa12a79bf939356de25a19bf8 c3d552ff5410648aa12a79bf939356de25a19bf8 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562209512 -0500	reset: moving to HEAD
+c3d552ff5410648aa12a79bf939356de25a19bf8 78d541dc023a6b92e71f77b45039064b9395d840 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562209817 -0500	commit (merge): merge v3seeds into master
+78d541dc023a6b92e71f77b45039064b9395d840 78d541dc023a6b92e71f77b45039064b9395d840 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562209979 -0500	checkout: moving from master to master-backup3
+78d541dc023a6b92e71f77b45039064b9395d840 ca0e4c0ef774ab8062899a002ba19c4ffd492ca5 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562210048 -0500	commit: backup after finishing v3
+ca0e4c0ef774ab8062899a002ba19c4ffd492ca5 78d541dc023a6b92e71f77b45039064b9395d840 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562210221 -0500	checkout: moving from master-backup3 to master
+78d541dc023a6b92e71f77b45039064b9395d840 c2212c1b14ac32f04c7e8cde6c1a6029f6bc0367 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562210276 -0500	commit: note fast forward issue
+c2212c1b14ac32f04c7e8cde6c1a6029f6bc0367 c2212c1b14ac32f04c7e8cde6c1a6029f6bc0367 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562336146 -0500	checkout: moving from master to v4comments
+c2212c1b14ac32f04c7e8cde6c1a6029f6bc0367 8baf3efc44d94f08bfde541c0b794d5a7941558e Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562343828 -0500	commit: v3 nested routes, comments function, 90% done
+8baf3efc44d94f08bfde541c0b794d5a7941558e c2212c1b14ac32f04c7e8cde6c1a6029f6bc0367 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562343910 -0500	checkout: moving from v4comments to master
+c2212c1b14ac32f04c7e8cde6c1a6029f6bc0367 8baf3efc44d94f08bfde541c0b794d5a7941558e Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562343923 -0500	merge v4comments: Fast-forward
+8baf3efc44d94f08bfde541c0b794d5a7941558e c2212c1b14ac32f04c7e8cde6c1a6029f6bc0367 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562344143 -0500	checkout: moving from master to c2212c1b14ac32f04c7e8cde6c1a6029f6bc0367
+c2212c1b14ac32f04c7e8cde6c1a6029f6bc0367 8baf3efc44d94f08bfde541c0b794d5a7941558e Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562344265 -0500	checkout: moving from c2212c1b14ac32f04c7e8cde6c1a6029f6bc0367 to 8baf3efc44d94f08bfde541c0b794d5a7941558e
+8baf3efc44d94f08bfde541c0b794d5a7941558e 8baf3efc44d94f08bfde541c0b794d5a7941558e Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562344356 -0500	checkout: moving from 8baf3efc44d94f08bfde541c0b794d5a7941558e to v4comments
+8baf3efc44d94f08bfde541c0b794d5a7941558e 8baf3efc44d94f08bfde541c0b794d5a7941558e Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562344362 -0500	checkout: moving from v4comments to master
+8baf3efc44d94f08bfde541c0b794d5a7941558e c2212c1b14ac32f04c7e8cde6c1a6029f6bc0367 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562344379 -0500	checkout: moving from master to c2212c1b14ac32f04c7e8cde6c1a6029f6bc0367
+c2212c1b14ac32f04c7e8cde6c1a6029f6bc0367 8baf3efc44d94f08bfde541c0b794d5a7941558e Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562344386 -0500	checkout: moving from c2212c1b14ac32f04c7e8cde6c1a6029f6bc0367 to v4comments
+8baf3efc44d94f08bfde541c0b794d5a7941558e 8baf3efc44d94f08bfde541c0b794d5a7941558e Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562344390 -0500	checkout: moving from v4comments to master
+8baf3efc44d94f08bfde541c0b794d5a7941558e 2538e61902ce24f58b00d6ca84c8f98f74990d4f Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562344514 -0500	commit: update description
+2538e61902ce24f58b00d6ca84c8f98f74990d4f 8baf3efc44d94f08bfde541c0b794d5a7941558e Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562344535 -0500	checkout: moving from master to v4comments
+8baf3efc44d94f08bfde541c0b794d5a7941558e 60e490a5c6879649c316ffedd799971b0f9676b9 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562344779 -0500	commit: update description
+60e490a5c6879649c316ffedd799971b0f9676b9 2538e61902ce24f58b00d6ca84c8f98f74990d4f Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562344798 -0500	checkout: moving from v4comments to master
+2538e61902ce24f58b00d6ca84c8f98f74990d4f 83c1fa3d5a558b7e3613c894bde175925fca6da4 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562344974 -0500	commit (merge): test git hub
+83c1fa3d5a558b7e3613c894bde175925fca6da4 080c26dbe32d7b1d29ca68371eed376ac8d29845 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562362891 -0500	commit: note the fast forward. finished v4, adding comments
+080c26dbe32d7b1d29ca68371eed376ac8d29845 080c26dbe32d7b1d29ca68371eed376ac8d29845 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562362926 -0500	checkout: moving from master to master-backup4
+080c26dbe32d7b1d29ca68371eed376ac8d29845 42345719e14ba551c27c0ebea6ac38f944e88b90 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562362988 -0500	commit: update branch name
+42345719e14ba551c27c0ebea6ac38f944e88b90 080c26dbe32d7b1d29ca68371eed376ac8d29845 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562363009 -0500	checkout: moving from master-backup4 to master
+080c26dbe32d7b1d29ca68371eed376ac8d29845 ad5816da5fb1c98211dd981b67b07f7c03ff26cc Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562363096 -0500	commit: update branch name
+ad5816da5fb1c98211dd981b67b07f7c03ff26cc ad5816da5fb1c98211dd981b67b07f7c03ff26cc Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562363142 -0500	checkout: moving from master to v5styleShowPage
+ad5816da5fb1c98211dd981b67b07f7c03ff26cc 57846e3d323fcfa7f1a91ee981fb1b9b7a701a58 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562504664 -0500	commit: update description
+57846e3d323fcfa7f1a91ee981fb1b9b7a701a58 a65b8efa3a0bfe56bd4f7858d5d037200309ac13 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562508404 -0500	commit: finish v5, style Show Page
+a65b8efa3a0bfe56bd4f7858d5d037200309ac13 ad5816da5fb1c98211dd981b67b07f7c03ff26cc Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562508423 -0500	checkout: moving from v5styleShowPage to master
+ad5816da5fb1c98211dd981b67b07f7c03ff26cc c1d9b93923dabac10b91c481da21cc34582dc974 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562508476 -0500	commit: this commit prevents fast forward
+c1d9b93923dabac10b91c481da21cc34582dc974 a65b8efa3a0bfe56bd4f7858d5d037200309ac13 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562508508 -0500	checkout: moving from master to v5styleShowPage
+a65b8efa3a0bfe56bd4f7858d5d037200309ac13 c1d9b93923dabac10b91c481da21cc34582dc974 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562508533 -0500	checkout: moving from v5styleShowPage to master
+c1d9b93923dabac10b91c481da21cc34582dc974 c1d9b93923dabac10b91c481da21cc34582dc974 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562508617 -0500	reset: moving to HEAD
+c1d9b93923dabac10b91c481da21cc34582dc974 c1d9b93923dabac10b91c481da21cc34582dc974 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562508621 -0500	checkout: moving from master to master
+c1d9b93923dabac10b91c481da21cc34582dc974 4afe724717c445268b9a3536a76cabe14004eaca Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562508931 -0500	commit (merge): merge v5styleShowPage into master
+4afe724717c445268b9a3536a76cabe14004eaca 4afe724717c445268b9a3536a76cabe14004eaca Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562508994 -0500	checkout: moving from master to master-backup5
+4afe724717c445268b9a3536a76cabe14004eaca d1e72f04e957a199b611e6aeb27ffaabd3a803ec Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562509041 -0500	commit: update description for master-backup5
+d1e72f04e957a199b611e6aeb27ffaabd3a803ec 4afe724717c445268b9a3536a76cabe14004eaca Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562602135 -0500	checkout: moving from master-backup5 to master
+4afe724717c445268b9a3536a76cabe14004eaca 4afe724717c445268b9a3536a76cabe14004eaca Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562602692 -0500	rebase -i (start): checkout HEAD
+4afe724717c445268b9a3536a76cabe14004eaca 4afe724717c445268b9a3536a76cabe14004eaca Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562602692 -0500	rebase -i (finish): returning to refs/heads/master
+4afe724717c445268b9a3536a76cabe14004eaca 250facd1705e03bc1079822d985216ee307102e7 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562602784 -0500	rebase -i (start): checkout HEAD~10
+250facd1705e03bc1079822d985216ee307102e7 4182958e903bc3939a34954a565bdd46467fd4b4 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562602784 -0500	rebase -i (pick): control 2 file
+4182958e903bc3939a34954a565bdd46467fd4b4 4afe724717c445268b9a3536a76cabe14004eaca Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562602827 -0500	rebase -i (abort): updating HEAD
+4afe724717c445268b9a3536a76cabe14004eaca 4afe724717c445268b9a3536a76cabe14004eaca Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562602827 -0500	rebase -i (abort): updating HEAD
+4afe724717c445268b9a3536a76cabe14004eaca a65b8efa3a0bfe56bd4f7858d5d037200309ac13 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562603237 -0500	checkout: moving from master to v5styleShowPage
+a65b8efa3a0bfe56bd4f7858d5d037200309ac13 a65b8efa3a0bfe56bd4f7858d5d037200309ac13 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562603272 -0500	checkout: moving from v5styleShowPage to v6auth
+a65b8efa3a0bfe56bd4f7858d5d037200309ac13 8ba866709162946413165f2accceea5776707b2a Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562603405 -0500	commit: update description for v6
+8ba866709162946413165f2accceea5776707b2a 4afe724717c445268b9a3536a76cabe14004eaca Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562603446 -0500	checkout: moving from v6auth to master
+4afe724717c445268b9a3536a76cabe14004eaca 5a4af912a009d72a39f9b604fb9985b56531c023 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562603673 -0500	commit (merge): expect a fast forward case
+5a4af912a009d72a39f9b604fb9985b56531c023 8ba866709162946413165f2accceea5776707b2a Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562603733 -0500	checkout: moving from master to v6auth
+8ba866709162946413165f2accceea5776707b2a ce1c650e8de0faf211631a4d146e6ac1f2dbcf4c Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562608763 -0500	commit: finish v6auth authentication, ready to merge into master branch
+ce1c650e8de0faf211631a4d146e6ac1f2dbcf4c 5a4af912a009d72a39f9b604fb9985b56531c023 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562608778 -0500	checkout: moving from v6auth to master
+5a4af912a009d72a39f9b604fb9985b56531c023 6991deb15ec2ca66f9d674d29acff41df67d0961 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562608784 -0500	merge v6auth: Merge made by the 'recursive' strategy.
+6991deb15ec2ca66f9d674d29acff41df67d0961 ce1c650e8de0faf211631a4d146e6ac1f2dbcf4c Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562619862 -0500	checkout: moving from master to v6auth
+ce1c650e8de0faf211631a4d146e6ac1f2dbcf4c ce1c650e8de0faf211631a4d146e6ac1f2dbcf4c Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562619896 -0500	checkout: moving from v6auth to v7refactorRoutes
+ce1c650e8de0faf211631a4d146e6ac1f2dbcf4c 8dbd4d7dca3a2b951307cc0f9e8a9412fdbf7d67 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562645662 -0500	commit: finish v7 refactor routes
+8dbd4d7dca3a2b951307cc0f9e8a9412fdbf7d67 6991deb15ec2ca66f9d674d29acff41df67d0961 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562645709 -0500	checkout: moving from v7refactorRoutes to master
+6991deb15ec2ca66f9d674d29acff41df67d0961 78492eaac24f9f0afc70e48fe3bf1173cae77489 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562645930 -0500	commit (merge): finish v7, merge from v7 refactor routes
+78492eaac24f9f0afc70e48fe3bf1173cae77489 8dbd4d7dca3a2b951307cc0f9e8a9412fdbf7d67 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562706218 -0500	checkout: moving from master to v7refactorRoutes
+8dbd4d7dca3a2b951307cc0f9e8a9412fdbf7d67 8dbd4d7dca3a2b951307cc0f9e8a9412fdbf7d67 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562706250 -0500	checkout: moving from v7refactorRoutes to v8commentUser
+8dbd4d7dca3a2b951307cc0f9e8a9412fdbf7d67 78492eaac24f9f0afc70e48fe3bf1173cae77489 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562706332 -0500	checkout: moving from v8commentUser to master
+78492eaac24f9f0afc70e48fe3bf1173cae77489 78492eaac24f9f0afc70e48fe3bf1173cae77489 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562706391 -0500	checkout: moving from master to v8commentUser
+78492eaac24f9f0afc70e48fe3bf1173cae77489 dc52b85ab6ad669a07940b53ea7ca0316011d018 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562709250 -0500	commit: finish v8, save author"s name to a comment automactically
+dc52b85ab6ad669a07940b53ea7ca0316011d018 78492eaac24f9f0afc70e48fe3bf1173cae77489 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562709276 -0500	checkout: moving from v8commentUser to master
+78492eaac24f9f0afc70e48fe3bf1173cae77489 dc52b85ab6ad669a07940b53ea7ca0316011d018 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562709282 -0500	merge v8commentUser: Fast-forward
+dc52b85ab6ad669a07940b53ea7ca0316011d018 bb1db3b0405eb92dd01e4629b4b56e51856e19dd Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562709503 -0500	commit: finish v8commentUser, save author"s name to a comment automactically
+bb1db3b0405eb92dd01e4629b4b56e51856e19dd dc52b85ab6ad669a07940b53ea7ca0316011d018 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562709569 -0500	checkout: moving from master to v8commentUser
+dc52b85ab6ad669a07940b53ea7ca0316011d018 dc52b85ab6ad669a07940b53ea7ca0316011d018 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562711553 -0500	checkout: moving from v8commentUser to v9campgroundUser
+dc52b85ab6ad669a07940b53ea7ca0316011d018 598497ec045b50d13b876d7ac9093a4ada645c66 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562716524 -0500	commit: finish v9campgroundUser save author’s name to campgrounds automacticall
+598497ec045b50d13b876d7ac9093a4ada645c66 bb1db3b0405eb92dd01e4629b4b56e51856e19dd Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562716564 -0500	checkout: moving from v9campgroundUser to master
+bb1db3b0405eb92dd01e4629b4b56e51856e19dd 8394716579c0522314711f4a2dffed10f2ac4933 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562716898 -0500	commit (merge): merge from v9campgroundUser, save author"s name to campgrounds automactically
+8394716579c0522314711f4a2dffed10f2ac4933 8394716579c0522314711f4a2dffed10f2ac4933 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562727924 -0500	checkout: moving from master to v10updateDestroy
+8394716579c0522314711f4a2dffed10f2ac4933 8394716579c0522314711f4a2dffed10f2ac4933 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562727952 -0500	checkout: moving from v10updateDestroy to master
+8394716579c0522314711f4a2dffed10f2ac4933 598497ec045b50d13b876d7ac9093a4ada645c66 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562727972 -0500	checkout: moving from master to v9campgroundUser
+598497ec045b50d13b876d7ac9093a4ada645c66 598497ec045b50d13b876d7ac9093a4ada645c66 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562727981 -0500	checkout: moving from v9campgroundUser to v10updateDestroy
+598497ec045b50d13b876d7ac9093a4ada645c66 35b1d37d07a688c75a37f4d8e7034764354d87f9 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562732781 -0500	commit: update function to edit campgrounds
+35b1d37d07a688c75a37f4d8e7034764354d87f9 0fac95ade23f6e8897b87daf3912ba17bbb665eb Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562768245 -0500	commit: add function/button to delete campground
+0fac95ade23f6e8897b87daf3912ba17bbb665eb a5bb8fbb08a48806b26e8e7b85d3b4723962b1ea Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562773277 -0500	commit: move campground update/remove routes to seperate file
+a5bb8fbb08a48806b26e8e7b85d3b4723962b1ea 6e358ac8059c5fac3dc25853d3f15591d9cdcc14 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562775037 -0500	commit: add function to authorize users/owners before edit/remove campgrounds
+6e358ac8059c5fac3dc25853d3f15591d9cdcc14 11cf94ae2b575d65dabf21c76388b26420e323e6 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562816617 -0500	commit: add function to edit comment, still strugle on the position of the Edit button
+11cf94ae2b575d65dabf21c76388b26420e323e6 8394716579c0522314711f4a2dffed10f2ac4933 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562816649 -0500	checkout: moving from v10updateDestroy to master
+8394716579c0522314711f4a2dffed10f2ac4933 d2536ef36d7401af3374c003b3d96791486b93ec Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562816976 -0500	commit (merge): function to edit/remove campgrounds with authorization, still working on comments
+d2536ef36d7401af3374c003b3d96791486b93ec e7114cca3c73d84c2ac158de02826b996ba82806 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562853975 -0500	commit: fixed Edit comment button
+e7114cca3c73d84c2ac158de02826b996ba82806 ce1c650e8de0faf211631a4d146e6ac1f2dbcf4c Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562854007 -0500	checkout: moving from master to v6auth
+ce1c650e8de0faf211631a4d146e6ac1f2dbcf4c 8dbd4d7dca3a2b951307cc0f9e8a9412fdbf7d67 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562854024 -0500	checkout: moving from v6auth to v7refactorRoutes
+8dbd4d7dca3a2b951307cc0f9e8a9412fdbf7d67 dc52b85ab6ad669a07940b53ea7ca0316011d018 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562854032 -0500	checkout: moving from v7refactorRoutes to v8commentUser
+dc52b85ab6ad669a07940b53ea7ca0316011d018 598497ec045b50d13b876d7ac9093a4ada645c66 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562854045 -0500	checkout: moving from v8commentUser to v9campgroundUser
+598497ec045b50d13b876d7ac9093a4ada645c66 e7114cca3c73d84c2ac158de02826b996ba82806 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562854058 -0500	checkout: moving from v9campgroundUser to master
+e7114cca3c73d84c2ac158de02826b996ba82806 56d69cb9cc574c84cd622c31988865af389df17a Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562854167 -0500	commit: update notice section in README
+56d69cb9cc574c84cd622c31988865af389df17a 11cf94ae2b575d65dabf21c76388b26420e323e6 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562854185 -0500	checkout: moving from master to v10updateDestroy
+11cf94ae2b575d65dabf21c76388b26420e323e6 56d69cb9cc574c84cd622c31988865af389df17a Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562854291 -0500	checkout: moving from v10updateDestroy to master
+56d69cb9cc574c84cd622c31988865af389df17a 11cf94ae2b575d65dabf21c76388b26420e323e6 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562854302 -0500	checkout: moving from master to v10updateDestroy
+11cf94ae2b575d65dabf21c76388b26420e323e6 56d69cb9cc574c84cd622c31988865af389df17a Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562854305 -0500	merge master: Fast-forward
+56d69cb9cc574c84cd622c31988865af389df17a 81773aa70d925c9dbb115e300108773f027669e6 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562855545 -0500	commit: function delete comment works, need to refactor routes, authorization
+81773aa70d925c9dbb115e300108773f027669e6 efa2a29ada7c720b2b038f503ecfe3c05f12d4ce Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562860782 -0500	commit: add function to edit/delete comments with authorizations
+efa2a29ada7c720b2b038f503ecfe3c05f12d4ce 56d69cb9cc574c84cd622c31988865af389df17a Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562860799 -0500	checkout: moving from v10updateDestroy to master
+56d69cb9cc574c84cd622c31988865af389df17a efa2a29ada7c720b2b038f503ecfe3c05f12d4ce Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562860806 -0500	merge v10updateDestroy: Fast-forward
+efa2a29ada7c720b2b038f503ecfe3c05f12d4ce 24c1503189db0031d88c5f5c44c38e5dbda674bc Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562861092 -0500	commit: minor change to README
+24c1503189db0031d88c5f5c44c38e5dbda674bc 817711209da0a9c7198c273c40a7dc73dac33576 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562880114 -0500	commit: prepare to deploy to heroku
+817711209da0a9c7198c273c40a7dc73dac33576 817711209da0a9c7198c273c40a7dc73dac33576 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562880221 -0500	checkout: moving from master to herokuDeploy
+817711209da0a9c7198c273c40a7dc73dac33576 1f79063628c9b4fbe5a6b666280d947250e11abc Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562880609 -0500	commit: heroku add start script
+1f79063628c9b4fbe5a6b666280d947250e11abc 3638a53ac4641cd7ee79d7781dee4cfe6b1e93a9 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562881028 -0500	commit: minor change
+3638a53ac4641cd7ee79d7781dee4cfe6b1e93a9 9b0a1c21504657df45b4ca8058cfe4378c615177 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562881290 -0500	commit: use mongodb cloud
+9b0a1c21504657df45b4ca8058cfe4378c615177 940c4b409f92b82459212d0841d9dbad014c8cf2 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562881541 -0500	commit: update app.listen for heroku
+940c4b409f92b82459212d0841d9dbad014c8cf2 7918a27d95d73283a7afae59f09641f035f2afb3 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562944590 -0500	commit: modify dbUrl
+7918a27d95d73283a7afae59f09641f035f2afb3 9edb0061653bce1e6aa9b540a4400ed8c49fb8a0 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562947351 -0500	commit: clean up app.js, modifications helped deploying on heroku
+9edb0061653bce1e6aa9b540a4400ed8c49fb8a0 817711209da0a9c7198c273c40a7dc73dac33576 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562947365 -0500	checkout: moving from herokuDeploy to master
+817711209da0a9c7198c273c40a7dc73dac33576 8e62a4448b5f1f4d33715c46e352a736d424823e Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562947461 -0500	commit: waiting for heroku enabled
+8e62a4448b5f1f4d33715c46e352a736d424823e bf8163635a532714ceae9e37da14d3f3818180a5 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562947489 -0500	merge herokuDeploy: Merge made by the 'recursive' strategy.
+bf8163635a532714ceae9e37da14d3f3818180a5 bf8163635a532714ceae9e37da14d3f3818180a5 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562948880 -0500	checkout: moving from master to v11flaskUi
+bf8163635a532714ceae9e37da14d3f3818180a5 ef9de21b70c73b162dd5752d44d0ae5a06e2ac8c Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562949868 -0500	commit: refactor code, middleware functions moved to seperate file
+ef9de21b70c73b162dd5752d44d0ae5a06e2ac8c 4d911c87eca27cb28af25de6480dcded41d2877c Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562957478 -0500	commit: proof that js DOM can exist in ejs file
+4d911c87eca27cb28af25de6480dcded41d2877c 429a22b3debb38540188faea6b9ddf21303142c4 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562957890 -0500	commit: Revert "proof that js DOM can exist in ejs file"
+429a22b3debb38540188faea6b9ddf21303142c4 ad719aded40070023a89fbcf687ee84b86da2e03 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562970557 -0500	commit: add function to show flash messages (all routes updated)
+ad719aded40070023a89fbcf687ee84b86da2e03 bf8163635a532714ceae9e37da14d3f3818180a5 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562970587 -0500	checkout: moving from v11flaskUi to master
+bf8163635a532714ceae9e37da14d3f3818180a5 de7d5a2b983b65c23f284d12e21fd96d78d986ff Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562970659 -0500	commit: waiting for refactor middleware, flash feature
+de7d5a2b983b65c23f284d12e21fd96d78d986ff 5060a8b5102cf2467a2eb2c43912e40704e635f9 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562970706 -0500	merge v11flaskUi: Merge made by the 'recursive' strategy.
+5060a8b5102cf2467a2eb2c43912e40704e635f9 218b163b1b7e47488edaa73d58ca3416cb3e2c16 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562970974 -0500	commit: update READ to show the refactor middleware, flash messages
+218b163b1b7e47488edaa73d58ca3416cb3e2c16 c50841f02fc8bf5a4b9463fe533f757f6297fbc5 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563076157 -0500	commit: summarize all techniques used
+c50841f02fc8bf5a4b9463fe533f757f6297fbc5 c50841f02fc8bf5a4b9463fe533f757f6297fbc5 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563076188 -0500	checkout: moving from master to v12backgroundSlider
+c50841f02fc8bf5a4b9463fe533f757f6297fbc5 67f75e6fd97601d27a8e758e4a7b83385a65a2d0 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563082907 -0500	commit: add style landing page, using Ian css background slider, also add icon/url for landing/index page
+67f75e6fd97601d27a8e758e4a7b83385a65a2d0 c50841f02fc8bf5a4b9463fe533f757f6297fbc5 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563082945 -0500	checkout: moving from v12backgroundSlider to master
+c50841f02fc8bf5a4b9463fe533f757f6297fbc5 67f75e6fd97601d27a8e758e4a7b83385a65a2d0 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563082955 -0500	merge v12backgroundSlider: Fast-forward
+67f75e6fd97601d27a8e758e4a7b83385a65a2d0 c0af849116e7235bea630ce4020c82c5fac1073c Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563083287 -0500	commit: update README
+c0af849116e7235bea630ce4020c82c5fac1073c 9edb0061653bce1e6aa9b540a4400ed8c49fb8a0 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563083315 -0500	checkout: moving from master to herokuDeploy
+9edb0061653bce1e6aa9b540a4400ed8c49fb8a0 c0af849116e7235bea630ce4020c82c5fac1073c Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563083320 -0500	merge master: Fast-forward
+c0af849116e7235bea630ce4020c82c5fac1073c e26d48cb21a06b7a73782a073dc283e864a2b4c9 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563144088 -0500	commit: add further development text
+e26d48cb21a06b7a73782a073dc283e864a2b4c9 c0af849116e7235bea630ce4020c82c5fac1073c Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563144106 -0500	checkout: moving from herokuDeploy to master
+c0af849116e7235bea630ce4020c82c5fac1073c e26d48cb21a06b7a73782a073dc283e864a2b4c9 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563144113 -0500	merge herokuDeploy: Fast-forward
+e26d48cb21a06b7a73782a073dc283e864a2b4c9 e26d48cb21a06b7a73782a073dc283e864a2b4c9 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563144163 -0500	checkout: moving from master to v12campgroundPrice
+e26d48cb21a06b7a73782a073dc283e864a2b4c9 e26d48cb21a06b7a73782a073dc283e864a2b4c9 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563144173 -0500	checkout: moving from v12campgroundPrice to master
+e26d48cb21a06b7a73782a073dc283e864a2b4c9 e26d48cb21a06b7a73782a073dc283e864a2b4c9 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563144181 -0500	checkout: moving from master to v13campgroundPrice
+e26d48cb21a06b7a73782a073dc283e864a2b4c9 e441632fd313e31c0b7143da0462f7238a9dfc42 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563146386 -0500	commit: modify footer, add campground db price attribute
+e441632fd313e31c0b7143da0462f7238a9dfc42 e26d48cb21a06b7a73782a073dc283e864a2b4c9 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563146405 -0500	checkout: moving from v13campgroundPrice to master
+e26d48cb21a06b7a73782a073dc283e864a2b4c9 d9a9d5c62380aed85eb749b5800c9da947b0fe3c Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563146585 -0500	commit: waiting for v13campgroundPrice
+d9a9d5c62380aed85eb749b5800c9da947b0fe3c ea9aaf9150dc434e96c0ee5d431079b23736e8e7 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563146597 -0500	merge v13campgroundPrice: Merge made by the 'recursive' strategy.
+ea9aaf9150dc434e96c0ee5d431079b23736e8e7 3cad5ad989cc4b49527b83168974eb31602b1fb5 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563147244 -0500	commit: waiting for v14
+3cad5ad989cc4b49527b83168974eb31602b1fb5 3cad5ad989cc4b49527b83168974eb31602b1fb5 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563147362 -0500	checkout: moving from master to v14uiImprovement
+3cad5ad989cc4b49527b83168974eb31602b1fb5 b0f94e0527394647c425c178a9a8a199a78f5516 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563151089 -0500	commit: template container using header footer, bootstrap to login/register, active class for header
+b0f94e0527394647c425c178a9a8a199a78f5516 6e4cf3acbbf70f4384bdb2543ee60774b7b4b1ba Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563151596 -0500	commit: add flash message for login
+6e4cf3acbbf70f4384bdb2543ee60774b7b4b1ba 3cad5ad989cc4b49527b83168974eb31602b1fb5 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563151653 -0500	checkout: moving from v14uiImprovement to master
+3cad5ad989cc4b49527b83168974eb31602b1fb5 6e4cf3acbbf70f4384bdb2543ee60774b7b4b1ba Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563151664 -0500	merge v14uiImprovement: Fast-forward
+6e4cf3acbbf70f4384bdb2543ee60774b7b4b1ba cc640cd0da3528e2006881c7c9399892a3e8566b Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563152010 -0500	commit: update README for v14
+cc640cd0da3528e2006881c7c9399892a3e8566b 859a649421afaf2d685311ffc85daf6815a10ddd Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563214479 -0500	commit: waiting for v15googleApi
+859a649421afaf2d685311ffc85daf6815a10ddd 859a649421afaf2d685311ffc85daf6815a10ddd Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563214504 -0500	checkout: moving from master to v15googleApi
+859a649421afaf2d685311ffc85daf6815a10ddd 06ccb10ef8a4c5fe957afe5c5ad38d0c2dbcb166 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563225928 -0500	commit: add function to add/edit location, show maps on campground show page
+06ccb10ef8a4c5fe957afe5c5ad38d0c2dbcb166 859a649421afaf2d685311ffc85daf6815a10ddd Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563226203 -0500	checkout: moving from v15googleApi to master
+859a649421afaf2d685311ffc85daf6815a10ddd 06ccb10ef8a4c5fe957afe5c5ad38d0c2dbcb166 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563226210 -0500	merge v15googleApi: Fast-forward
+06ccb10ef8a4c5fe957afe5c5ad38d0c2dbcb166 0694d72071ac2aa436b53d2ee67bacc217b15b30 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563291476 -0500	commit: modify READ, minor CSS change for INDEX page, ready for heroku push
+0694d72071ac2aa436b53d2ee67bacc217b15b30 e26d48cb21a06b7a73782a073dc283e864a2b4c9 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563291589 -0500	checkout: moving from master to herokuDeploy
+e26d48cb21a06b7a73782a073dc283e864a2b4c9 0694d72071ac2aa436b53d2ee67bacc217b15b30 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563291597 -0500	merge master: Fast-forward
+0694d72071ac2aa436b53d2ee67bacc217b15b30 0694d72071ac2aa436b53d2ee67bacc217b15b30 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563294435 -0500	checkout: moving from herokuDeploy to master
+0694d72071ac2aa436b53d2ee67bacc217b15b30 0694d72071ac2aa436b53d2ee67bacc217b15b30 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563294462 -0500	checkout: moving from master to v16createTime
+0694d72071ac2aa436b53d2ee67bacc217b15b30 2d0e97604796226f326464c66d75c73a59738a3a Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563296672 -0500	commit: add function to show creation time of campground, comment
+2d0e97604796226f326464c66d75c73a59738a3a 0694d72071ac2aa436b53d2ee67bacc217b15b30 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563296705 -0500	checkout: moving from v16createTime to master
+0694d72071ac2aa436b53d2ee67bacc217b15b30 2d0e97604796226f326464c66d75c73a59738a3a Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563296710 -0500	merge v16createTime: Fast-forward
+2d0e97604796226f326464c66d75c73a59738a3a 8486e948f836f9bca651868cec3659e84fa1df09 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563296844 -0500	commit: modify README, add feature to show creation time for campground/comment
+8486e948f836f9bca651868cec3659e84fa1df09 8486e948f836f9bca651868cec3659e84fa1df09 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563296870 -0500	checkout: moving from master to v17admin
+8486e948f836f9bca651868cec3659e84fa1df09 523ec6dd386a055aec0ab2e649fe00fcefb23176 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563303607 -0500	commit: add function to have admin privilege when creating account, edit/delete activated for admin
+523ec6dd386a055aec0ab2e649fe00fcefb23176 8486e948f836f9bca651868cec3659e84fa1df09 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563303632 -0500	checkout: moving from v17admin to master
+8486e948f836f9bca651868cec3659e84fa1df09 523ec6dd386a055aec0ab2e649fe00fcefb23176 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563303640 -0500	merge v17admin: Fast-forward
+523ec6dd386a055aec0ab2e649fe00fcefb23176 523ec6dd386a055aec0ab2e649fe00fcefb23176 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563663462 -0500	checkout: moving from master to react
+523ec6dd386a055aec0ab2e649fe00fcefb23176 523ec6dd386a055aec0ab2e649fe00fcefb23176 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563711844 -0500	checkout: moving from react to master
+523ec6dd386a055aec0ab2e649fe00fcefb23176 523ec6dd386a055aec0ab2e649fe00fcefb23176 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563711862 -0500	checkout: moving from master to react
+523ec6dd386a055aec0ab2e649fe00fcefb23176 523ec6dd386a055aec0ab2e649fe00fcefb23176 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563711877 -0500	checkout: moving from react to master
+523ec6dd386a055aec0ab2e649fe00fcefb23176 523ec6dd386a055aec0ab2e649fe00fcefb23176 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563711886 -0500	checkout: moving from master to react
+523ec6dd386a055aec0ab2e649fe00fcefb23176 523ec6dd386a055aec0ab2e649fe00fcefb23176 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563711913 -0500	checkout: moving from react to master
+523ec6dd386a055aec0ab2e649fe00fcefb23176 bd5bd0dba2c89206451b38e759e7cd90cd0ed796 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563711969 -0500	commit: test the status of project
+bd5bd0dba2c89206451b38e759e7cd90cd0ed796 3841c4d050105705a4e230571d2fd200238845ad Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563919205 -0500	commit: add meta tag for mobile responsive, fix the index page for mobile, refactor routes for error checking
+3841c4d050105705a4e230571d2fd200238845ad 0694d72071ac2aa436b53d2ee67bacc217b15b30 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563919267 -0500	checkout: moving from master to herokuDeploy
+0694d72071ac2aa436b53d2ee67bacc217b15b30 3841c4d050105705a4e230571d2fd200238845ad Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563919270 -0500	merge master: Fast-forward
+3841c4d050105705a4e230571d2fd200238845ad 58a201aed11fee74360bc048a7167254934f4b9b Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1564000121 -0500	commit: add visible version of gitignore
+58a201aed11fee74360bc048a7167254934f4b9b 3841c4d050105705a4e230571d2fd200238845ad Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1564000167 -0500	checkout: moving from herokuDeploy to master
+3841c4d050105705a4e230571d2fd200238845ad 58a201aed11fee74360bc048a7167254934f4b9b Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1564000176 -0500	merge herokuDeploy: Fast-forward
+58a201aed11fee74360bc048a7167254934f4b9b 58a201aed11fee74360bc048a7167254934f4b9b Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1564087848 -0500	checkout: moving from master to testUserHasCampComment
+58a201aed11fee74360bc048a7167254934f4b9b e5b54edddcc240bfb431357c005ff4a1c33009a7 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1564087939 -0500	commit: try to associate camp to user and comment to user. In other words, user now has attribute campByUser and CommentByUser. However, there are issues when delete campground, cannot delete all comments from all user.commentByUser, cannot refer to comments by other users
+e5b54edddcc240bfb431357c005ff4a1c33009a7 58a201aed11fee74360bc048a7167254934f4b9b Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1564089174 -0500	checkout: moving from testUserHasCampComment to master
+58a201aed11fee74360bc048a7167254934f4b9b e5b54edddcc240bfb431357c005ff4a1c33009a7 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1564089190 -0500	checkout: moving from master to testUserHasCampComment
+e5b54edddcc240bfb431357c005ff4a1c33009a7 58a201aed11fee74360bc048a7167254934f4b9b Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1564089200 -0500	checkout: moving from testUserHasCampComment to master
+58a201aed11fee74360bc048a7167254934f4b9b 58a201aed11fee74360bc048a7167254934f4b9b Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1564089248 -0500	checkout: moving from master to v18userProfile
+58a201aed11fee74360bc048a7167254934f4b9b e7713405b3d9d0a0ae3e18fbf270336d4af2bfdb Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1564107397 -0500	commit: error when register users
+e7713405b3d9d0a0ae3e18fbf270336d4af2bfdb 58a201aed11fee74360bc048a7167254934f4b9b Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1564107554 -0500	checkout: moving from v18userProfile to master
+58a201aed11fee74360bc048a7167254934f4b9b 58a201aed11fee74360bc048a7167254934f4b9b Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1564107655 -0500	checkout: moving from master to v18version2
+58a201aed11fee74360bc048a7167254934f4b9b c278f35e85e1a87e571e011137b6380ecc9b3aa8 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1564111536 -0500	commit: found the issue with passport.authenticate
+c278f35e85e1a87e571e011137b6380ecc9b3aa8 e7713405b3d9d0a0ae3e18fbf270336d4af2bfdb Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1564111614 -0500	checkout: moving from v18version2 to v18userProfile
+e7713405b3d9d0a0ae3e18fbf270336d4af2bfdb 7d866279c0a0074f70fd02bbca2398e0640ef887 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1564115550 -0500	commit: add user profile. Each profile page has 1-name, 2-avatar or template photo, 3-campgrounds created
+7d866279c0a0074f70fd02bbca2398e0640ef887 58a201aed11fee74360bc048a7167254934f4b9b Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1564115635 -0500	checkout: moving from v18userProfile to master
+58a201aed11fee74360bc048a7167254934f4b9b 0056631016119849179803a4260de85c10a4f564 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1564116184 -0500	commit: waiting for v18
+0056631016119849179803a4260de85c10a4f564 fab00e12e5215d27446362e594562924290cd677 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1564116195 -0500	merge v18userProfile: Merge made by the 'recursive' strategy.

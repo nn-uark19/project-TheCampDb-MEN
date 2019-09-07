@@ -1,0 +1,3 @@
+0000000000000000000000000000000000000000 3cad5ad989cc4b49527b83168974eb31602b1fb5 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563147362 -0500	branch: Created from HEAD
+3cad5ad989cc4b49527b83168974eb31602b1fb5 b0f94e0527394647c425c178a9a8a199a78f5516 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563151089 -0500	commit: template container using header footer, bootstrap to login/register, active class for header
+b0f94e0527394647c425c178a9a8a199a78f5516 6e4cf3acbbf70f4384bdb2543ee60774b7b4b1ba Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1563151596 -0500	commit: add flash message for login

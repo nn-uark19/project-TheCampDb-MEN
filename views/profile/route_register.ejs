@@ -1,0 +1,51 @@
+<%include ../partials/header.ejs%>
+
+<h1 class="text-center">Sign Up</h1>
+<div id="form" style="width:50%; margin: 25px auto">
+  <form action="/register" method="post" class="form-horizontal">
+    <div class="form-group">
+      <label for="username" class="col-sm-3 control-label">Username</label>
+      <div class="col-sm-9">
+        <input id="username" class="form-control" type="text" name="newUser[username]" placeholder="username">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="password" class="col-sm-3 control-label">Password</label>
+      <div class="col-sm-9">
+        <input id='password' class="form-control" type="password" name="password" placeholder="password">
+      </div>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="name" class="col-sm-3 control-label">Full name</label>
+      <div class="col-sm-5">
+        <input id='name' class="form-control" type="text" name="newUser[firstname]" placeholder="first name">
+      </div>
+      <div class="col-sm-4">
+        <input class="form-control" type="text" name="newUser[lastname]" placeholder="last name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email" class="col-sm-3 control-label">Email</label>
+      <div class="col-sm-9">
+        <input id="email" class="form-control" type="text" name="newUser[email]" placeholder="email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="avatar" class="col-sm-3 control-label">Avatar url</label>
+      <div class="col-sm-9">
+        <input id="avatar" class="form-control" type="text" name="newUser[avatar]" placeholder="avatar url">
+      </div>
+    </div>
+    <br>
+    <div class="form-group has-warning">
+      <label for="admin" class="col-sm-3 control-label">Admin code</label>
+      <div class="col-sm-9">
+        <input id='admin' class="form-control" type="text" name="adminCheck" placeholder="leave blank if you don't have a admin password">
+      </div>
+    </div>
+    <button class="btn btn-primary btn-lg btn-block">Create new Account!</button>
+  </form>
+</div>
+
+<%include ../partials/footer.ejs%>

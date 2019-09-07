@@ -1,0 +1,78 @@
+/* ========================================== */
+/* for every file, padding bottom for footer */
+body {
+  padding-bottom: 40px; /* for footer */
+}
+
+/* ========================================== */
+/* Google Maps, show page /views/campgrounds/route_show.ejs,  */
+#map {
+  height: 400px;
+  width: 100%;
+  border: 1px solid rgb(221, 221, 221);
+}
+
+
+/* ========================================== */
+/*button for Delete campground/comment, show page /views/campgrounds/route_show.ejs,  */
+.delete-button {
+  display: inline;
+}
+
+#comment-text {
+  margin: 0px;
+}
+
+.comment-one {
+  margin: 0 0 15px 0;
+}
+
+/* ========================================== */
+/* /views/partials/footer.ejs */
+#footer {
+  /* position */
+  position:fixed;
+  bottom:0;
+  width:100%;
+  height:40px;   /* Height of the footer */  
+
+  /* text */
+  text-align: center;
+  background: gainsboro;  
+  font-family: "Lobster";
+  padding: 10px 0 0 0;
+}
+
+/* ========================================== */
+/* intro box for each campgrounds, index page /views/campgrounds/route_index.ejs,  */ 
+.campIntro {
+  /* height: 280px; */
+}
+
+.campIntroText {
+  height: 38px;
+}
+
+/* ========================================== */
+/* user profile  */ 
+.userName {
+  background-color: #29303b;
+  color: white;
+  padding: 20px 10%;
+}
+
+.userImage {
+  margin: 40px auto;
+}
+
+.userImage img{
+  margin-top: 5%;
+  /* position: absolute; */
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-position: 50% 50% center center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  margin: 0 0;
+}
