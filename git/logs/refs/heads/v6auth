@@ -1,3 +1,0 @@
-0000000000000000000000000000000000000000 a65b8efa3a0bfe56bd4f7858d5d037200309ac13 Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562603272 -0500	branch: Created from HEAD
-a65b8efa3a0bfe56bd4f7858d5d037200309ac13 8ba866709162946413165f2accceea5776707b2a Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562603405 -0500	commit: update description for v6
-8ba866709162946413165f2accceea5776707b2a ce1c650e8de0faf211631a4d146e6ac1f2dbcf4c Nghia Nguyen <nhuunghia_1711@yahoo.com.vn> 1562608763 -0500	commit: finish v6auth authentication, ready to merge into master branch
