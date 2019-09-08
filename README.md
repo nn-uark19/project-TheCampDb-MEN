@@ -1,6 +1,6 @@
 # camp-nn
 
 To Start the project:
-cd project-yelpCamp
+cd project-camp
 mongod
 nodemon

@@ -31,7 +31,7 @@ router.post('/register', function(req, res){
         req.flash('error', err.message);
         return res.redirect('back');
       }
-      req.flash('success', 'Your Account Has Been Created! Welcome to YelpCamp '+ newUser.username);
+      req.flash('success', 'Your Account Has Been Created! Welcome to TheCampDB '+ newUser.username);
       res.redirect('/campgrounds');
     });
   });
